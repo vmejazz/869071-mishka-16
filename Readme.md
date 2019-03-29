@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Василевич](https://up.htmlacademy.ru/adaptive/16/user/869071).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Метельков](https://htmlacademy.ru/profile/id512127).
 
 ---
 
