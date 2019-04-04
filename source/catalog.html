@@ -14,39 +14,37 @@
 <body>
   <!-- HEADER START -->
   <header class="page-header">
-    <a class="page-header__logo logo" href="./index.html">
-      <img class="logo__img" src="./img/mishka-logo-mobile.png" width="86" height="35" alt="Mishka">
+    <a class="page-header__logo" href="./index.html">
+      <img class="page-header__logo-img" src="./img/mishka-logo-mobile.png" width="86" height="35" alt="Mishka">
     </a>
-    <nav class="page-header__menu main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="./catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="./form.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <form class="site-list__link search-field" action="https://echo.htmlacademy.ru" method="post">
-              <input class="search-field__text" type="text" id="search-input" aria-label="Поле для поиска по сайту">
-              <button class="search-field__button" type="submit" aria-label="Кнопка поиска">Поиск</button>
-            </form>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="./cart.html">Корзина: <span>пока пуста</span></a>
-          </li>
-        </ul>
-      </div>
+    <nav class="page-header__menu">
+      <button class="page-header__menu-toggle" type="button">Открыть меню</button>
+      <ul class="page-header__nav-list">
+        <li class="page-header__nav-item">
+          <a class="page-header__nav-link" href="./catalog.html">Каталог товаров</a>
+        </li>
+        <li class="page-header__nav-item">
+          <a class="page-header__nav-link" href="./form.html">Вязание на заказ</a>
+        </li>
+        <li class="page-header__nav-item">
+          <form class="page-header__nav-link search-field" action="https://echo.htmlacademy.ru" method="post">
+            <input class="search-field__text" type="text" id="search-input" aria-label="Поле для поиска по сайту" placeholder="Поиск по сайту">
+            <button class="search-field__button" type="submit" aria-label="Кнопка поиска">Поиск</button>
+          </form>
+        </li>
+        <li class="page-header__nav-item">
+          <a class="page-header__nav-link" href="./cart.html">Корзина: пока пуста</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <!-- HEADER END -->
   <!-- MAIN START -->
   <main class="page-main">
-    <header class="page-main__header content-header">
-      <h1 class="content-header__title content-header__title--catalog">Каталог товаров</h1>
-      <img class="content-header__image content-header__image--catalog" src="./img/grey_back.png" width="320" height="280" alt="Плюшевые изделия">
-      <div class="content-header__top">
+    <header class="page-main__header">
+      <h1 class="page-main__header-title page-main__header-title--catalog">Каталог товаров</h1>
+      <img class="page-main__header-image page-main__header-image--catalog" src="./img/grey_back.png" width="320" height="280" alt="Плюшевые изделия">
+      <div class="page-main__header-top">
         <div class="product-sort">
           <a class="product-sort__link" href="./new-product.html">Новые поступления</a>
           <a class="product-sort__link" href="./sale-product.html">Распродажа</a>
@@ -56,29 +54,37 @@
     </header>
 
     <div class="catalog-content">
-      <article class="product-card">
-        <h4 class="product-card__title">Зайчик-попрыгайчик</h4>
-        <img class="product-card__image" src="./img/photo-1-mobile.png" alt="Зайчик-попрыгайчик">
-        <p class="product-card__descr">Рост 30 см, вес 200 г</p>
-        <span class="product-card__price">1 200 руб.</span>
-        <a class="product-card__button" href="">В корзину</a>
-      </article>
-      <article class="product-card">
-        <h4 class="product-card__title">Корзинка для белья</h4>
-        <img class="product-card__image" src="./img/photo-2-mobile.png" alt="Корзинка для белья">
-        <p class="product-card__descr">Диаметр 15 см, высота 10 см</p>
-        <span class="product-card__price">690 руб.</span>
-        <a class="product-card__button" href="">В корзину</a>
-      </article>
-      <article class="product-card">
-        <h4 class="product-card__title">Большая корзинка для игрушек</h4>
-        <img class="product-card__image" src="./img/photo-3-mobile.png" alt="Большая корзинка для игрушек">
-        <p class="product-card__descr">Диаметр 30 см, высота 30 см</p>
-        <span class="product-card__price">1 500 руб.</span>
-        <a class="product-card__button" href="">В корзину</a>
-      </article>
-      <article class="made-info">
-        <h4 class="made-info__title">Процесс производства</h4>
+      <ul class="catalog-content__list product-list">
+        <li class="product-list__item">
+          <article class="product-card">
+            <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
+            <img class="product-card__image" src="./img/photo-1-mobile.png" alt="Зайчик-попрыгайчик">
+            <p class="product-card__descr">Рост 30 см, вес 200 г</p>
+            <span class="product-card__price">1 200 руб.</span>
+            <a class="product-card__button" href="">В корзину</a>
+          </article>
+        </li>
+        <li class="product-list__item">
+          <article class="product-card">
+            <h3 class="product-card__title">Корзинка для белья</h3>
+            <img class="product-card__image" src="./img/photo-2-mobile.png" alt="Корзинка для белья">
+            <p class="product-card__descr">Диаметр 15 см, высота 10 см</p>
+            <span class="product-card__price">690 руб.</span>
+            <a class="product-card__button" href="">В корзину</a>
+          </article>
+        </li>
+        <li class="product-list__item">
+          <article class="product-card">
+            <h3 class="product-card__title">Большая корзинка для игрушек</h3>
+            <img class="product-card__image" src="./img/photo-3-mobile.png" alt="Большая корзинка для игрушек">
+            <p class="product-card__descr">Диаметр 30 см, высота 30 см</p>
+            <span class="product-card__price">1 500 руб.</span>
+            <a class="product-card__button" href="">В корзину</a>
+          </article>
+        </li>
+      </ul>
+      <article class="catalog-content__made made-info">
+        <h3 class="made-info__title">Процесс производства</h3>
         <video class="made-info__video" width="260" height="150" poster="./img/video-mobile.png">
           <button class="made-info__play" type="button">Воспроизвести</button>
         </video>
@@ -104,11 +110,11 @@
         </li>
       </ul>
     </div>
-    <div class="page-footer__feedback feedback">
-      <a class="feedback__link" href="https://htmlacademy.ru/intensive/htmlcss">Разработано —</a>
+    <div class="page-footer__feedback">
+      <a class="page-footer__feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">Разработано —</a>
     </div>
-    <a class="page-footer__logo logo" href="./index.html">
-      <img class="logo__img" src="./img/mishka-logo-mobile.png" width="86" height="35" alt="Mishka">
+    <a class="page-footer__logo">
+      <img class="page-footer__logo-img" src="./img/mishka-logo-mobile.png" width="86" height="35" alt="Mishka">
     </a>
   </footer>
   <!-- FOOTER END -->
