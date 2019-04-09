@@ -9,8 +9,6 @@
   list-style: none;
 }
 
-
-
 .social__link {
   display: inline-block;
   width: 30px;
@@ -25,13 +23,13 @@
 }
 
 .social__link--facebook {
-  background-image: url(../../img/icon-fb.svg);
+  background-image: url("../../img/icon-fb.svg");
 }
 
 .social__link--instagramm {
-  background-image: url(../../img/icon-insta.svg);
+  background-image: url("../../img/icon-insta.svg");
 }
 
 .social__link--twitter {
-  background-image: url(../../img/icon-twitter.svg);
+  background-image: url("../../img/icon-twitter.svg");
 }
