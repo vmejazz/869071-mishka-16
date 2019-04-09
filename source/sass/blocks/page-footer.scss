@@ -1,0 +1,32 @@
+.page-footer {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.page-footer__social {
+  width: 320px;
+}
+
+.page-footer__feedback-link {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+
+  &::after {
+    content: "";
+
+    display: inline-block;
+    width: 27px;
+    height: 35px;
+
+    vertical-align: top;
+
+    background-image: url(../../img/htmlacademy.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+}
