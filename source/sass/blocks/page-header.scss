@@ -41,7 +41,7 @@
   display: none;
   width: 100%;
 
-  @include list-rest();
+  @include list-reset();
 }
 
 .page-header__menu-item {

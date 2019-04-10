@@ -4,7 +4,7 @@
   display: flex;
   margin-left: 82px;
 
-  @include list-rest();
+  @include list-reset();
 }
 
 .social__link {

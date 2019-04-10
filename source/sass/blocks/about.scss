@@ -13,7 +13,7 @@
 }
 
 .about__list {
-  @include list-rest();
+  @include list-reset();
 }
 
 .about__item {
