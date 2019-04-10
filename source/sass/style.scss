@@ -1,10 +1,10 @@
 @import "./fonts.scss";
 @import "./variables.scss";
 @import "./main.scss";
+@import "./blocks/button.scss";
 @import "./blocks/page-header.scss";
 @import "./blocks/page-main.scss";
 @import "./blocks/product-card.scss";
-@import "./blocks/button.scss";
 @import "./blocks/about.scss";
 @import "./blocks/reviews.scss";
 @import "./blocks/slider.scss";
@@ -14,3 +14,4 @@
 @import "./blocks/catalog-content.scss";
 @import "./blocks/product-snippet.scss";
 @import "./blocks/made-info.scss";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic");     //удалить после

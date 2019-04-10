@@ -20,15 +20,15 @@
 .page-main__header-title {
   margin: 0;
   padding-top: 76px;
-  padding-left: 38px;
   padding-right: 38px;
   padding-bottom: 0;
+  padding-left: 38px;
 
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-  color: #010000;
   text-align: center;
+  color: #010000;
 }
 
 .page-main__header-top {
@@ -57,6 +57,7 @@
 
 .page-main__categories-item {
   position: relative;
+
   width: 100%;
   height: 103px;
 
@@ -71,21 +72,21 @@
 .page-main__categories-link {
   display: inline-block;
   padding-top: 30px;
-  padding-left: 30px;
   padding-right: 185px;
+  padding-left: 30px;
 
   vertical-align: top;
 }
 
 .page-main__categories-item--interior {
-
   &::after {
     content: "";
-    width: 40px;
-    height: 62px;
     position: absolute;
     top: 23px;
     right: 36px;
+
+    width: 40px;
+    height: 62px;
 
     background-image: url("../../img/icon-interior.svg");
     background-repeat: no-repeat;
@@ -98,11 +99,12 @@
 
   &::after {
     content: "";
-    width: 60px;
-    height: 60px;
     position: absolute;
     top: 23px;
     right: 27px;
+
+    width: 60px;
+    height: 60px;
 
     background-image: url("../../img/icon-toy.svg");
     background-repeat: no-repeat;
@@ -115,8 +117,11 @@
 
   &::after {
     content: "";
+    position: absolute;
+    left: 0;
 
-    width: 100%;
+    width: 320px;
+    height: 24px;
 
     background-color: #f1f1f1;
     background-image: url("../../img/bg-zigzag-line.svg");
@@ -127,8 +132,8 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    margin-top: -88px;
     width: 768px;
+    margin-top: -88px;
   }
 
   .page-main__header {
@@ -148,8 +153,8 @@
       width: 100%;
       height: 24px;
 
-      background-image: url("../../img/bg-zigzag-line.svg");
       background-color: #ffffff;
+      background-image: url("../../img/bg-zigzag-line.svg");
     }
   }
 
