@@ -1,44 +1,44 @@
 .page-header {
-  position: relative;
-
   display: flex;
   flex-direction: column;
   width: 320px;
-  min-height: 79px;
   margin: 0;
   padding: 0;
-  padding-right: 30px;
-  padding-left: 30px;
-
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 }
 
 .page-header__logo {
-  width: 86px;
+  width: 100%;
   height: 79px;
-  margin: 0 auto;
   padding-top: 22px;
 
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  text-align: center;
 }
 
 .page-header__menu {
   position: relative;
 
   width: 100%;
-  margin: 0 auto;
-
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 }
 
 .page-header__menu-toggle {
   position: absolute;
   top: -79px;
   right: 0;
+
+  width: 80px;
+  height: 79px;
+
+  font-size: 0;
+
+  border: none;
+  background: none;
+  background-image: url("../../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page-header__menu-list {
-  display: none;
+  // display: none;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -46,8 +46,14 @@
   list-style: none;
 }
 
+.page-header__buyer-tools {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .page-header__menu-item {
-  width: 100%;
   height: 79px;
   margin: 0;
   padding: 0;
@@ -61,9 +67,10 @@
   height: 100%;
   padding-top: 32px;
   padding-bottom: 30px;
+  padding-left: 76px;
 
   font-weight: 700;
-  vertical-align: middle;
+  vertical-align: top;
   text-decoration: none;
 }
 
@@ -72,4 +79,72 @@
   height: 100%;
   padding-top: 32px;
   padding-bottom: 30px;
+  padding-left: 76px;
+}
+
+.search-field__input {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 768px;
+    padding: 0 50px;
+    flex-direction: row;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    width: 320px;
+
+    text-align: start;
+  }
+
+  .page-header__menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-header__menu-toggle {
+    display: none;
+  }
+
+  .page-header__menu-list {
+    display: flex;
+    z-index: 1;
+  }
+
+  .page-header__buyer-tools {
+    order: -1;
+    display: flex;
+    height: 88px;
+    margin-left: 320px;
+  }
+
+  .page-header__menu-item {
+    box-shadow: none;
+  }
+
+  .page-header__menu-list .page-header__menu-item {
+    margin-right: 35px;
+  }
+
+  .page-header__menu-list .page-header__menu-link {
+    padding-top: 16px;
+  }
+
+  .page-header__menu-item--cart {
+    width: 270px;
+    padding-left: 80px;
+  }
+
+  .page-header__menu-link {
+    padding-left: 0;
+    text-align: start;
+  }
+
+  .page-header__menu-search {
+    width: 85px;
+    padding-left: 0;
+  }
 }
