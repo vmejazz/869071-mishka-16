@@ -2,11 +2,9 @@
 
 .social__list {
   display: flex;
-  margin: 0;
   margin-left: 82px;
-  padding: 0;
 
-  list-style: none;
+  @include list-rest();
 }
 
 .social__link {

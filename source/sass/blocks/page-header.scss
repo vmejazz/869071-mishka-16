@@ -40,10 +40,8 @@
 .page-header__menu-list {
   display: none;
   width: 100%;
-  margin: 0;
-  padding: 0;
 
-  list-style: none;
+  @include list-rest();
 }
 
 .page-header__menu-item {
