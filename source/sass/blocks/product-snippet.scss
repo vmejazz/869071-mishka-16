@@ -1,0 +1,27 @@
+.product-snippet__title {
+  font-weight: 700;
+}
+
+.product-snippet__descr {
+  font-size: 13px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.product-snippet__price {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.product-snippet__button {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+  font-size: 0;
+  vertical-align: top;
+
+  background-image: url("../../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

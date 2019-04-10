@@ -1,0 +1,33 @@
+
+
+.social__list {
+  display: flex;
+  margin-left: 82px;
+
+  @include list-reset();
+}
+
+.social__link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+
+  font-size: 0;
+  vertical-align: top;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link--facebook {
+  background-image: url("../../img/icon-fb.svg");
+}
+
+.social__link--instagramm {
+  background-image: url("../../img/icon-insta.svg");
+}
+
+.social__link--twitter {
+  background-image: url("../../img/icon-twitter.svg");
+}
