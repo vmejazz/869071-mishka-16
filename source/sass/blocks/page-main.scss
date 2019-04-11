@@ -50,7 +50,7 @@
 .page-main__categories-list {
   width: 100%;
 
-  @include list-rest();
+  @include list-reset();
 }
 
 .page-main__categories-item {
