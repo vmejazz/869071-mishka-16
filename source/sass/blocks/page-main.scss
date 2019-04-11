@@ -49,10 +49,8 @@
 
 .page-main__categories-list {
   width: 100%;
-  margin: 0;
-  padding: 0;
 
-  list-style: none;
+  @include list-rest();
 }
 
 .page-main__categories-item {
