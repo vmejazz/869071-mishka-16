@@ -18,16 +18,7 @@
 }
 
 .about__list {
-<<<<<<< HEAD
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-
-  border: 1px solid red;
-=======
   @include list-reset();
->>>>>>> master
 }
 
 .about__item {
