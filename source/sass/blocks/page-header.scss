@@ -30,11 +30,11 @@
 
   font-size: 0;
 
-  border: none;
   background: none;
-  background-image: url("../../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   background-position: center;
+  border: none;
 }
 
 .page-header__menu-list {
@@ -86,13 +86,14 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    flex-direction: row;
     width: 768px;
     padding: 0 50px;
-    flex-direction: row;
   }
 
   .page-header__logo {
     position: absolute;
+
     width: 320px;
 
     text-align: start;
@@ -108,13 +109,14 @@
   }
 
   .page-header__menu-list {
-    display: flex;
     z-index: 1;
+
+    display: flex;
   }
 
   .page-header__buyer-tools {
-    order: -1;
     display: flex;
+    order: -1;
     height: 88px;
     margin-left: 320px;
   }
@@ -138,6 +140,7 @@
 
   .page-header__menu-link {
     padding-left: 0;
+
     text-align: start;
   }
 

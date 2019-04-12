@@ -1,4 +1,8 @@
-
+.slider__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
 
 .slider__button {
   width: 50%;
@@ -7,12 +11,35 @@
   padding: 0;
 
   background-color: #ffffff;
-  background-image: url("../../img/icon-left-arrow.svg");
+  background-image: url("../img/icon-left-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #ececec;
 }
 
 .slider__button--next {
-  background-image: url("../../img/icon-right-arrow.svg");
+  background-image: url("../img/icon-right-arrow.svg");
+}
+
+
+@media (min-width: $tablet-width) {
+  .slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  .slider__buttons {
+    height: 50px;
+    margin-right: 19px;
+  }
+
+  .slider__button {
+    width: 60px;
+    margin-left: 37px;
+
+    border: none;
+  }
 }
