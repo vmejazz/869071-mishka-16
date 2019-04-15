@@ -7,6 +7,8 @@
 }
 
 .page-header__logo {
+  z-index: 1;
+
   width: 100%;
   height: 79px;
   padding-top: 22px;
@@ -117,7 +119,7 @@
   .page-header__buyer-tools {
     display: flex;
     order: -1;
-    height: 88px;
+    min-height: 88px;
     margin-left: 320px;
   }
 
@@ -147,5 +149,46 @@
   .page-header__menu-search {
     width: 85px;
     padding-left: 0;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .page-header {
+    width: 100%;
+    max-width: 1150px;
+  }
+
+  .page-header__logo {
+    max-width: 200px;
+    margin: 0;
+    margin-left: 500px;
+  }
+
+  .page-header__menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header__menu-list {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  .page-header__buyer-tools {
+    order: 0;
+    margin-left: 300px;
+  }
+
+  .page-header__menu-link {
+    min-width: 175px;
+  }
+
+  .page-header__menu-list .page-header__menu-item {
+    margin-right: 50px;
+  }
+
+  .page-header__menu-list .page-header__menu-link {
+    padding-top: 26px;
   }
 }

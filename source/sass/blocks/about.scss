@@ -102,3 +102,15 @@
     padding-top: 110px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .about {
+    padding-right: 225px;
+    padding-left: 225px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

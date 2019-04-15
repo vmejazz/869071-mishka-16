@@ -14,7 +14,8 @@
 }
 
 .page-main__header--catalog {
-  background-image: url("../img/grey_back.png");
+  background-color: #f1f1f1;
+  background-image: none;
 }
 
 .page-main__header-title {
@@ -32,14 +33,14 @@
 }
 
 .page-main__header-top {
+  position: absolute;
+  top: 25px;
+
   display: none;
   padding-right: 50px;
 }
 
 .page-main__nav-list {
-  position: absolute;
-  top: 0;
-
   display: flex;
   margin: 0;
   padding: 0;
@@ -111,20 +112,40 @@
 }
 
 .page-main__product-card {
+  position: relative;
+
   margin-bottom: 35px;
 
   &::after {
     content: "";
-    position: absolute;
+    position: relative;
+    bottom: -52px;
     left: 0;
 
-    width: 320px;
-    height: 24px;
+    width: 100%;
+    height: 17px;
 
-    background-color: #f1f1f1;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-size: contain;
+  }
+}
+
+.page-main__reviews {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: relative;
+    bottom: -52px;
+    left: 0;
+
+    width: 100%;
+    height: 17px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -149,12 +170,30 @@
       z-index: 1;
 
       width: 100%;
-      height: 24px;
+      height: 34px;
 
-      background-color: #ffffff;
-      background-image: url("../img/bg-zigzag-line.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
     }
   }
+
+  .page-main__product-card {
+    &::after {
+      content: "";
+      position: absolute;
+    }
+  }
+
+  .page-main__header--catalog {
+    height: 226px;
+
+    background-color: #f1f1f1;
+    background-image: none;
+  }
+
+  .page-main__header--catalog .page-main__header-title {
+    padding-top: 106px;
+  }
+
 
   .page-main__header-title {
     padding-top: 160px;
@@ -166,6 +205,7 @@
   .page-main__header-top {
     display: flex;
     justify-content: flex-end;
+    width: 100%;
   }
 
   .page-main__nav {
@@ -173,11 +213,8 @@
   }
 
   .info-delivery {
-    position: absolute;
-    top: 25px;
-
     margin: 0;
-    padding: 0;
+    // padding: 0;
   }
 
   .page-main__categories-list {
@@ -187,13 +224,117 @@
 
   .page-main__contacts {
     width: 100%;
+    margin-top: 45px;
+  }
+
+  .catalog-content {
+    width: 100%;
+    max-width: 778px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 
-.page-main__reviews {
-  margin-bottom: 45px;
-}
+@media (min-width: $desctop-width) {
+  .page-main {
+    width: 100%;
+    max-width: 1150px;
+    margin-top: 0;
+  }
 
-.page-main__contacts {
-  margin-top: 45px;
+  .page-main__header-top {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 50px;
+  }
+
+  .page-main__nav {
+    display: flex;
+
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .page-main__nav-item {
+    min-width: 175px;
+    padding-right: 60px;
+  }
+
+  .info-delivery {
+    position: relative;
+    top: 0;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+  }
+
+  .page-main__header-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-main__header {
+    width: 100%;
+
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: 0 0;
+  }
+
+  .page-main__categories-list {
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  .page-main__categories-item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .page-main__product-card {
+    &::after {
+      position: relative;
+
+      width: 100%;
+      height: 17px;
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .page-main__contacts {
+    margin-top: 82px;
+  }
+
+  .page-main__header--catalog {
+    height: 255px;
+
+    background-color: #f1f1f1;
+    background-image: none;
+  }
+
+  .catalog-content {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 111px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .catalog__item {
+    margin-left: 50px;
+  }
+
+  .catalog__item:first-child {
+    margin-left: 0;
+  }
+
+  .catalog-content__made-info {
+    width: 1050px;
+  }
 }

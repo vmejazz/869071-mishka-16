@@ -82,3 +82,22 @@
     text-align: end;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .page-footer {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .page-footer__logo {
+    width: 350px;
+  }
+
+  .page-footer__social {
+    width: 350px;
+  }
+
+  .page-footer__feedback-link {
+    width: 350px;
+  }
+}
