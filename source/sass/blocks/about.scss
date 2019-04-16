@@ -1,6 +1,4 @@
 .about {
-  margin-top: 34px;
-  margin-bottom: 60px;
   padding-right: 30px;
   padding-left: 30px;
 
@@ -10,7 +8,7 @@
 
 .about__title {
   margin: 0;
-  margin-top: 76px;
+  margin-bottom: 86px;
 
   font-weight: 700;
   font-size: 25px;
@@ -24,14 +22,16 @@
 .about__item {
   position: relative;
 
+  width: 230px;
   margin: 0;
   padding: 0;
-  padding-top: 85px;
+  padding-bottom: 83px;
 
   &::before {
     content: "";
     position: absolute;
-    bottom: 50px;
+    top: -56px;
+    left: -6px;
 
     width: 60px;
     height: 40px;

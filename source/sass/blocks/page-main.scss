@@ -10,7 +10,7 @@
 
   background-image: url("../img/hero-mobile.png");
   background-repeat: no-repeat;
-  background-position: -127px -15px;
+  background-position: -127px -16px;
 }
 
 .page-main__header--catalog {
@@ -20,7 +20,7 @@
 
 .page-main__header-title {
   margin: 0;
-  padding-top: 76px;
+  padding-top: 72px;
   padding-right: 38px;
   padding-bottom: 0;
   padding-left: 38px;
@@ -70,7 +70,7 @@
 
 .page-main__categories-link {
   display: inline-block;
-  padding-top: 30px;
+  padding-top: 24px;
   padding-right: 185px;
   padding-left: 30px;
 
@@ -99,7 +99,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 23px;
+    top: 21px;
     right: 27px;
 
     width: 60px;
@@ -114,11 +114,12 @@
 .page-main__product-card {
   position: relative;
 
-  margin-bottom: 35px;
+  margin-top: 26px;
+  // margin-bottom: 35px;
 
   &::after {
     content: "";
-    position: relative;
+    position: absolute;
     bottom: -52px;
     left: 0;
 
@@ -131,8 +132,15 @@
   }
 }
 
+.page-main__about-item {
+  margin-top: 69px;
+}
+
 .page-main__reviews {
   position: relative;
+
+  margin-top: -28px;
+  margin-bottom: 87px;
 
   &::after {
     content: "";

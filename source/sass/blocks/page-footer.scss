@@ -10,14 +10,19 @@
 
 .page-footer__social {
   height: 80px;
+  margin-right: 38px;
+  margin-left: 32px;
 }
 
 .page-footer__feedback-link {
   position: relative;
+  top: -3px;
 
   display: flex;
   align-items: center;
   height: 80px;
+  margin-right: 18px;
+  margin-left: 18px;
 
   font-weight: 700;
   font-size: 19px;
@@ -26,6 +31,7 @@
   &::after {
     content: "";
     position: absolute;
+    top: 25px;
     right: 0;
 
     width: 27px;
@@ -36,6 +42,7 @@
     background-image: url("../img/htmlacademy.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 135%;
   }
 }
 
