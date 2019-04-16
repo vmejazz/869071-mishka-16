@@ -114,30 +114,36 @@
     z-index: 1;
 
     display: flex;
+
+    border-top: 1px solid #ececec;
   }
 
   .page-header__buyer-tools {
     display: flex;
     order: -1;
     min-height: 88px;
-    margin-left: 320px;
+    padding-left: 320px;
   }
 
   .page-header__menu-item {
+    height: 100%;
+
     box-shadow: none;
   }
 
   .page-header__menu-list .page-header__menu-item {
-    margin-right: 35px;
+    margin-right: 30px;
   }
 
   .page-header__menu-list .page-header__menu-link {
-    padding-top: 16px;
+    padding-top: 18px;
   }
 
   .page-header__menu-item--cart {
     width: 270px;
-    padding-left: 80px;
+    padding-left: 83px;
+
+    border-left: 1px solid #ececec;
   }
 
   .page-header__menu-link {
@@ -147,8 +153,12 @@
   }
 
   .page-header__menu-search {
-    width: 85px;
+    width: 83px;
     padding-left: 0;
+
+    text-align: center;
+
+    border-left: 1px solid #ececec;
   }
 }
 

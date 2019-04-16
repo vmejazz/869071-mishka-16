@@ -86,7 +86,8 @@
   .product-card__header {
     display: flex;
     justify-content: space-between;
-    margin-top: 55px;
+    margin-right: 28px;
+    margin-bottom: 49px;
   }
 
   .product-card__title {
@@ -98,6 +99,8 @@
 
   .product-card__icon {
     width: 70px;
+    margin: 0;
+    margin-top: 12px;
 
     font-size: 17px;
     line-height: 17px;
@@ -106,6 +109,7 @@
 
   .product-card__descr {
     width: 282px;
+    margin-bottom: 45px;
 
     font-size: 17px;
     line-height: 30px;
@@ -113,13 +117,17 @@
 
   .product-card__params {
     width: 300px;
-    margin-bottom: 0;
+    margin-bottom: 50px;
+  }
+
+  .product-card__cell--name {
+    width: 74px;
   }
 
   .product-card__image {
     position: absolute;
-    top: 140px;
-    right: 0;
+    top: 130px;
+    right: 50px;
 
     width: 333px;
     height: 404px;
@@ -127,14 +135,15 @@
 
   .product-card__price {
     width: 300px;
-    margin-top: 10px;
+    margin: 0;
+    margin-bottom: 27px;
 
     font-size: 20px;
     line-height: 24px;
   }
 
   .product-card__button {
-    width: 300px;
+    width: 290px;
     padding-left: 0;
 
     text-align: center;
