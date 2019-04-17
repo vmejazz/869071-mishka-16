@@ -1,15 +1,15 @@
 .catalog-content__list {
   @include list-reset();
-}
 
-@media (min-width: $desctop-width) {
-  .catalog-content__list {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
+}
 
-  .catalog__item {
+.catalog__item {
+  @media (min-width: $desktop-width) {
     height: 659px;
     margin-bottom: 57px;
 

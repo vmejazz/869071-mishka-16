@@ -4,6 +4,17 @@
 
   font-weight: 700;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 225px;
+    padding-left: 225px;
+  }
 }
 
 .about__title {
@@ -13,10 +24,27 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about__list {
   @include list-reset();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+  }
 }
 
 .about__item {
@@ -40,77 +68,33 @@
     background-position: center;
     opacity: 0.4;
   }
-}
 
-.about__item--eco {
-  &::before {
+  &--eco::before {
     background-image: url("../img/icon-feature-flower.svg");
   }
-}
 
-.about__item--style {
-  &::before {
+  &--style::before {
     background-image: url("../img/icon-feature-money.svg");
   }
-}
 
-.about__item--like {
-  &::before {
+  &--like::before {
     background-image: url("../img/icon-feature-heart.svg");
   }
-}
 
-.about__item--manual {
-  &::before {
+  &--manual::before {
     background-image: url("../img/icon-feature-ball.svg");
   }
-}
 
-.about__item--manufacter {
-  &::before {
+  &--manufacter::before {
     background-image: url("../img/icon-feature-rocket.svg");
   }
-}
 
-.about__item--present {
-  &::before {
+  &--present::before {
     background-image: url("../img/icon-feature-gift.svg");
   }
-}
 
-@media (min-width: $tablet-width) {
-  .about {
-    width: 100%;
-    padding-right: 0;
-    padding-left: 50px;
-  }
-
-  .about__title {
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  .about__list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 500px;
-  }
-
-  .about__item {
+  @media (min-width: $tablet-width) {
     width: 240px;
     padding-top: 110px;
-  }
-}
-
-@media (min-width: $desctop-width) {
-  .about {
-    padding-right: 225px;
-    padding-left: 225px;
-  }
-
-  .about__title {
-    font-size: 53px;
-    line-height: 57px;
   }
 }

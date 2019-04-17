@@ -38,6 +38,21 @@ a {
   clip-path: inset(100%);
 }
 
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 1150px;
+  }
+}
+
 @mixin list-reset {
   margin: 0;
   padding: 0;

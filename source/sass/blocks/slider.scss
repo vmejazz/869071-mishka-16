@@ -1,7 +1,22 @@
+.slider {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+  }
+}
+
 .slider__buttons {
   display: flex;
   justify-content: space-between;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    height: 50px;
+    margin-right: 19px;
+  }
 }
 
 .slider__button {
@@ -15,28 +30,12 @@
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #ececec;
-}
 
-.slider__button--next {
-  background-image: url("../img/icon-right-arrow.svg");
-}
-
-
-@media (min-width: $tablet-width) {
-  .slider {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 100%;
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
   }
 
-  .slider__buttons {
-    height: 50px;
-    margin-right: 19px;
-  }
-
-  .slider__button {
+  @media (min-width: $tablet-width) {
     width: 60px;
     margin-left: 37px;
 

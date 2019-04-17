@@ -1,17 +1,35 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  width: 320px;
   padding-right: 50px;
   padding-left: 50px;
 
   background-color: #f1f1f1;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 143px;
+  }
 }
 
 .page-footer__social {
   height: 80px;
   margin-right: 38px;
   margin-left: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+  }
 }
 
 .page-footer__feedback-link {
@@ -44,42 +62,8 @@
     background-position: center;
     background-size: 135%;
   }
-}
 
-.page-footer__logo {
-  display: none;
-}
-
-@media (min-width: $tablet-width) {
-  .page-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 768px;
-    height: 143px;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-  .page-footer__logo {
-    display: inline-block;
-    flex-shrink: 0;
-    order: -1;
-    width: 260px;
-
-    vertical-align: top;
-  }
-
-  .page-footer__social {
-    width: 100%;
-    height: 100%;
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  .page-footer__feedback-link {
+  @media (min-width: $tablet-width) {
     flex-shrink: 0;
     justify-content: flex-end;
     width: 265px;
@@ -88,23 +72,25 @@
 
     text-align: end;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+  }
 }
 
-@media (min-width: $desctop-width) {
-  .page-footer {
-    width: 100%;
-    max-width: 1200px;
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    flex-shrink: 0;
+    order: -1;
+    width: 260px;
+
+    vertical-align: top;
   }
 
-  .page-footer__logo {
-    width: 350px;
-  }
-
-  .page-footer__social {
-    width: 350px;
-  }
-
-  .page-footer__feedback-link {
+  @media (min-width: $desktop-width) {
     width: 350px;
   }
 }
