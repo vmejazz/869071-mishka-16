@@ -8,17 +8,17 @@
 
   @include list-reset();
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     justify-content: space-between;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     justify-content: center;
   }
 }
 
 .social__item {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     margin-right: 20px;
     margin-left: 20px;
   }

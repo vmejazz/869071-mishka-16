@@ -1,5 +1,5 @@
 .contacts {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     position: relative;
 
     margin-bottom: 105px;
@@ -16,7 +16,7 @@
   font-size: 18px;
   line-height: 30px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     padding-right: 50px;
     padding-left: 50px;
 
@@ -24,7 +24,7 @@
     line-height: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     width: 350px;
     margin-left: 225px;
     padding-left: 0;
@@ -44,13 +44,13 @@
   line-height: 30px;
   color: #444444;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     width: 100%;
     padding-right: 50px;
     padding-left: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     width: 350px;
     margin-left: 225px;
     padding-right: 0;
@@ -61,13 +61,13 @@
 }
 
 .contacts__info tbody {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
     min-width: 86%;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     flex-direction: column;
   }
 }
@@ -90,7 +90,7 @@
     max-width: 143px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     &--name {
       width: 75px;
     }
@@ -100,7 +100,7 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     &--name {
       width: 75px;
     }
@@ -108,12 +108,12 @@
 }
 
 .contacts__img {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     width: 768px;
     height: 457px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     width: 525px;
     height: 457px;
   }
@@ -136,7 +136,7 @@
     background-position: center;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     position: absolute;
     top: 0;
     right: 0;
@@ -169,7 +169,7 @@
   padding-top: 14px;
   padding-left: 50px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     width: 230px;
     margin: 55px auto;
     padding-left: 0;
@@ -181,7 +181,7 @@
     border-left: none;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     width: 230px;
     height: 52px;
     margin: 0;

@@ -1,5 +1,5 @@
 .made-info {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -7,7 +7,7 @@
     margin-bottom: 109px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     flex-wrap: wrap;
     width: 1050px;
     height: 455px;
@@ -17,7 +17,7 @@
 .made-info__title {
   font-weight: 700;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     position: relative;
 
     margin: 0;
@@ -43,7 +43,7 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     width: 150px;
     margin-top: 100px;
     margin-left: 0;
@@ -63,7 +63,7 @@
   font-size: 13px;
   color: #444444;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     margin-bottom: 40px;
     margin-left: 40px;
 
@@ -72,7 +72,7 @@
     line-height: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     width: 230px;
     margin: 0;
     margin-bottom: 50px;
@@ -80,7 +80,7 @@
 }
 
 .made-info__video {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     position: relative;
 
     order: -1;
@@ -88,7 +88,7 @@
     height: 455px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     flex-shrink: 0;
     width: 682px;
     height: 100%;
@@ -97,19 +97,19 @@
 }
 
 .made-info__button {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     padding-left: 0;
 
     text-align: center;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     width: 230px;
   }
 }
 
 .made-info__play {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -124,7 +124,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop) {
   .made-info {
     flex-wrap: wrap;
     width: 1050px;

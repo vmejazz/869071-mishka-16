@@ -1,9 +1,9 @@
 .page-main {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     margin-top: -74px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     margin-top: 0;
   }
 }
@@ -21,7 +21,7 @@
     background-image: none;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     position: relative;
 
     height: 746px;
@@ -55,7 +55,7 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     width: 100%;
 
     background-image: url("../img/hero-desktop@1x.jpg");
@@ -83,14 +83,14 @@
   text-align: center;
   color: #010000;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     padding-top: 155px;
 
     font-size: 43px;
     line-height: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     font-size: 53px;
     line-height: 57px;
   }
@@ -103,7 +103,7 @@
   display: none;
   padding-right: 50px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     top: 21px;
 
     display: flex;
@@ -111,7 +111,7 @@
     width: 100%;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
@@ -120,14 +120,14 @@
 }
 
 .info-delivery {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     margin: 0;
 
     font-size: 15px;
     line-height: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     position: relative;
     top: 0;
 
@@ -139,11 +139,11 @@
 }
 
 .page-main__nav {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     display: none;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     display: flex;
 
     font-weight: 700;
@@ -161,7 +161,7 @@
 }
 
 .page-main__nav-item {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     min-width: 175px;
     padding-right: 60px;
   }
@@ -172,14 +172,14 @@
 
   @include list-reset();
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     display: flex;
     margin-top: -118px;
     padding-right: 50px;
     padding-left: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     width: 100%;
     padding: 0 50px;
   }
@@ -230,7 +230,7 @@
     background-image: url("../img/icon-toy.svg");
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     height: 120px;
 
     &--interior::after {
@@ -244,7 +244,7 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -258,7 +258,7 @@
 
   vertical-align: top;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     padding-top: 30px;
     padding-left: 36px;
 
@@ -286,7 +286,7 @@
     background-size: contain;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     margin-top: 45px;
 
     &::after {
@@ -296,7 +296,7 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     &::after {
       position: relative;
 
@@ -313,7 +313,7 @@
 .page-main__about-item {
   margin-top: 69px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     margin-top: 119px;
   }
 }
@@ -336,29 +336,32 @@
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 25px;
+    }
   }
 }
 
 .page-main__contacts {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     width: 100%;
-    margin-top: 85px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     margin-top: 82px;
   }
 }
 
 .catalog-content {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     width: 100%;
     max-width: 778px;
     padding-right: 30px;
     padding-left: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     width: 100%;
     max-width: 1200px;
     margin-top: 111px;
@@ -368,19 +371,19 @@
 }
 
 .catalog__item {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     margin-left: 50px;
   }
 }
 
 .catalog__item:first-child {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     margin-left: 0;
   }
 }
 
 .catalog-content__made-info {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     width: 1050px;
   }
 }

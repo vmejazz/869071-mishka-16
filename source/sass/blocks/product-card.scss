@@ -1,7 +1,7 @@
 .product-card {
   padding: 0 30px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     position: relative;
 
     display: flex;
@@ -9,7 +9,7 @@
     padding: 0 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     padding: 0;
     padding-right: 50px;
     padding-left: 50px;
@@ -17,14 +17,14 @@
 }
 
 .product-card__header {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
     margin-right: 28px;
     margin-bottom: 49px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     flex-direction: row-reverse;
     justify-content: flex-end;
   }
@@ -39,14 +39,14 @@
   font-size: 25px;
   line-height: 30px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     margin: 0;
 
     font-size: 43px;
     line-height: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     margin-left: 175px;
 
     font-weight: 700;
@@ -65,7 +65,7 @@
   color: #63d1bb;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     width: 70px;
     margin: 0;
     margin-top: 12px;
@@ -75,7 +75,7 @@
     text-align: center;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     position: absolute;
     left: 85px;
 
@@ -91,7 +91,7 @@
   font-size: 15px;
   color: #444444;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     width: 282px;
     margin-bottom: 45px;
 
@@ -99,7 +99,7 @@
     line-height: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     margin-top: 52px;
     margin-left: 175px;
   }
@@ -112,12 +112,12 @@
   line-height: 20px;
   color: #444444;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     width: 300px;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     margin-top: 67px;
     margin-left: 175px;
   }
@@ -135,7 +135,7 @@
     width: 160px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     &--name {
       width: 74px;
     }
@@ -147,7 +147,7 @@
 
   background-color: #f1f1f1;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     position: absolute;
     top: 130px;
     right: 50px;
@@ -156,7 +156,7 @@
     height: 404px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     top: 52px;
     right: 50px;
     z-index: -1;
@@ -176,7 +176,7 @@
   text-align: center;
   color: #444444;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     width: 300px;
     margin: 0;
     margin-bottom: 27px;
@@ -185,7 +185,7 @@
     line-height: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     margin-top: 97px;
     margin-left: 175px;
   }
@@ -195,71 +195,14 @@
   height: 52px;
   padding-top: 14px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     width: 290px;
     padding-left: 0;
 
     text-align: center;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     margin-left: 175px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .product-card {
-    padding: 0;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-  .product-card__header {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-  }
-
-  .product-card__title {
-    margin-left: 175px;
-
-    font-weight: 700;
-    font-size: 53px;
-    line-height: 57px;
-  }
-
-  .product-card__icon {
-    position: absolute;
-    left: 85px;
-
-    width: 80px;
-    padding-top: 6px;
-  }
-
-  .product-card__descr {
-    margin-top: 52px;
-    margin-left: 175px;
-  }
-
-  .product-card__params {
-    margin-top: 67px;
-    margin-left: 175px;
-  }
-
-  .product-card__price {
-    margin-top: 97px;
-    margin-left: 175px;
-  }
-
-  .product-card__button {
-    margin-left: 175px;
-  }
-
-  .product-card__image {
-    top: 52px;
-    right: 50px;
-    z-index: -1;
-
-    width: 525px;
-    height: 636px;
   }
 }

@@ -1,5 +1,5 @@
 .product-snippet {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     position: relative;
 
     display: flex;
@@ -12,7 +12,7 @@
     border-right: none;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     flex-direction: column;
     flex-wrap: nowrap;
     width: 314px;
@@ -23,7 +23,7 @@
 .product-snippet__title {
   font-weight: 700;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     margin: 0;
     margin-top: 29px;
     margin-bottom: 15px;
@@ -33,7 +33,7 @@
     line-height: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     margin-top: 29px;
     margin-bottom: 15px;
     padding-left: 28px;
@@ -41,13 +41,13 @@
 }
 
 .product-snippet__image {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     order: -1;
     width: 334px;
     height: 100%;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     width: 100%;
   }
 }
@@ -57,7 +57,7 @@
   line-height: 30px;
   color: #444444;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     margin: 0;
     margin-bottom: 200px;
 
@@ -66,7 +66,7 @@
     line-height: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     margin-bottom: 73px;
     padding-left: 28px;
   }
@@ -76,13 +76,13 @@
   font-weight: 700;
   font-size: 15px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     margin-bottom: 29px;
     padding-left: 28px;
   }
@@ -100,13 +100,13 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     position: absolute;
     right: 32px;
     bottom: 15px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     bottom: 29px;
   }
 }

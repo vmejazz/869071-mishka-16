@@ -3,18 +3,20 @@
   padding-right: 30px;
   padding-left: 30px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     position: relative;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
 
     &::before {
       content: "";
       position: absolute;
-      bottom: 0;
+      top: -78px;
       left: 0;
       z-index: -1;
 
@@ -27,7 +29,7 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     width: 100%;
     padding-top: 80px;
     padding-right: 50px;
@@ -38,7 +40,7 @@
 .reviews__slider {
   margin-bottom: 38px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     padding-left: 175px;
   }
 }
@@ -51,14 +53,15 @@
   font-size: 25px;
   line-height: 30px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     order: -1;
+    margin-bottom: 49px;
 
     font-size: 43px;
     line-height: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     padding-left: 175px;
 
     font-size: 53px;
@@ -74,15 +77,15 @@
   line-height: 30px;
   color: #444444;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     width: 100%;
-    margin-bottom: 68px;
+    margin-bottom: 54px;
 
     font-size: 17px;
     line-height: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop) {
     margin-bottom: 49px;
   }
 }
@@ -91,7 +94,9 @@
   margin: 0;
   margin-bottom: 3px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
+    max-width: 350px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
@@ -104,7 +109,7 @@
   line-height: 30px;
   color: #444444;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     font-weight: 400;
     font-size: 17px;
     line-height: 30px;
@@ -124,12 +129,12 @@
   height: 52px;
   padding-top: 14px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet) {
     order: -1;
     width: 175px;
     height: 52px;
     padding: 0;
-    padding-top: 12px;
+    padding-top: 14px;
 
     text-align: center;
   }
