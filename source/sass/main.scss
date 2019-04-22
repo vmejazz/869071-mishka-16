@@ -38,6 +38,21 @@ a {
   clip-path: inset(100%);
 }
 
+.container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    max-width: 1150px;
+  }
+}
+
 @mixin list-reset {
   margin: 0;
   padding: 0;
@@ -52,3 +67,29 @@ a {
   background: none;
   border: none;
 }
+
+// @mixin min($device-width) {
+//   @media (min-width: $device-width) {
+//     @content;
+//   }
+// }
+
+// @mixin min($media) {
+//   @if $media == mobile {
+//     @media all and (min-width: $mobile) {
+//       @content;
+//     }
+//   }
+
+//   @else if $media == tablet {
+//     @media all and (min-width: $tablet) {
+//       @content;
+//     }
+//   }
+
+//   @else if $media == desktop {
+//     @media all and (min-width: $desktop) {
+//       @content;
+//     }
+//   }
+// }

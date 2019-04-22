@@ -13,111 +13,115 @@
 <body>
   <!-- HEADER START -->
   <header class="page-header">
-    <a class="page-header__logo" href="./index.html">
-      <img class="page-header__logo-img" src="./img/mishka-logo-mobile.png" width="86" height="35" alt="Mishka">
-    </a>
-    <nav class="page-header__menu">
-      <button class="page-header__menu-toggle" type="button">Открыть меню</button>
-      <ul class="page-header__menu-list">
-        <li class="page-header__menu-item">
-          <a class="page-header__menu-link" href="./catalog.html">Каталог товаров</a>
-        </li>
-        <li class="page-header__menu-item">
-          <a class="page-header__menu-link" href="./form.html">Вязание на заказ</a>
-        </li>
-        <li class="page-header__menu-item">
-          <form class="page-header__menu-search search-field" action="https://echo.htmlacademy.ru" method="post">
+    <div class="container">
+      <a class="page-header__logo" href="./index.html">
+        <img class="page-header__logo-img" src="./img/mishka-logo-mobile.png" width="86" height="35" alt="Mishka">
+      </a>
+      <nav class="page-header__menu">
+        <button class="page-header__menu-toggle" type="button">Открыть меню</button>
+        <ul class="page-header__menu-list">
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="./catalog.html">Каталог товаров</a>
+          </li>
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link" href="./form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <div class="page-header__shopper-menu show-menu">
+          <form class="page-header__shopper-item page-header__shopper-item--search search-field" action="https://echo.htmlacademy.ru" method="post">
             <input class="search-field__input" type="text" id="search-input" aria-label="Поле для поиска по сайту" placeholder="Поиск по сайту">
             <button class="search-field__button" type="submit" aria-label="Кнопка поиска">Поиск</button>
           </form>
-        </li>
-        <li class="page-header__menu-item">
-          <a class="page-header__menu-link" href="./cart.html">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </nav>
+          <a class="page-header__shopper-item page-header__shopper-item--cart" href="./cart.html">Корзина: пока пуста</a>
+        </div>
+      </nav>
+    </div>
   </header>
   <!-- HEADER END -->
   <!-- MAIN START -->
   <main class="page-main">
-    <header class="page-main__header page-main__header--catalog">
-      <h1 class="page-main__header-title">Каталог товаров</h1>
-      <div class="page-main__header-top">
-        <div class="page-main__nav">
-          <ul class="page-main__list">
-            <li class="page-main__nav-item">
-              <a class="page-main__nav-link" href="./new-product.html">Новые поступления</a>
-            </li>
-            <li class="page-main__nav-item">
-              <a class="page-main__nav-link" href="./sale-product.html">Распродажа</a>
-            </li>
-          </ul>
+    <div class="container">
+      <header class="page-main__header page-main__header--catalog">
+        <h1 class="page-main__header-title">Каталог товаров</h1>
+        <div class="page-main__header-top">
+          <div class="page-main__nav">
+            <ul class="page-main__nav-list">
+              <li class="page-main__nav-item">
+                <a class="page-main__nav-link" href="./new-product.html">Новые поступления</a>
+              </li>
+              <li class="page-main__nav-item">
+                <a class="page-main__nav-link" href="./sale-product.html">Распродажа</a>
+              </li>
+            </ul>
+          </div>
+          <p class="info-delivery">Бесплатная доставка по России</p>
         </div>
-        <p class="info-delivery">Бесплатная доставка по России</p>
-      </div>
-    </header>
+      </header>
 
-    <div class="catalog-content">
-      <ul class="catalog-content__list catalog__list">
-        <li class="catalog__item">
-          <article class="product-snippet">
-            <h3 class="product-snippet__title">Зайчик-попрыгайчик</h3>
-            <img class="product-snippet__image" src="./img/photo-1-mobile.png" alt="Зайчик-попрыгайчик">
-            <p class="product-snippet__descr">Рост 30 см, вес 200 г</p>
-            <span class="product-snippet__price">1 200 руб.</span>
-            <a class="product-snippet__button" href="">В корзину</a>
-          </article>
-        </li>
-        <li class="catalog__item">
-          <article class="product-snippet">
-            <h3 class="product-snippet__title">Корзинка для белья</h3>
-            <img class="product-snippet__image" src="./img/photo-2-mobile.png" alt="Корзинка для белья">
-            <p class="product-snippet__descr">Диаметр 15 см, высота 10 см</p>
-            <span class="product-snippet__price">690 руб.</span>
-            <a class="product-snippet__button" href="">В корзину</a>
-          </article>
-        </li>
-        <li class="catalog__item">
-          <article class="product-snippet">
-            <h3 class="product-snippet__title">Большая корзинка для игрушек</h3>
-            <img class="product-snippet__image" src="./img/photo-3-mobile.png" alt="Большая корзинка для игрушек">
-            <p class="product-snippet__descr">Диаметр 30 см, высота 30 см</p>
-            <span class="product-snippet__price">1 500 руб.</span>
-            <a class="product-snippet__button" href="">В корзину</a>
-          </article>
-        </li>
-      </ul>
-      <article class="catalog-content__made-info made-info">
-        <h3 class="made-info__title">Процесс производства</h3>
-        <video class="made-info__video" width="260" height="150" poster="./img/video-mobile.png">
-          <button class="made-info__play" type="button">Воспроизвести</button>
-        </video>
-        <p class="made-info__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="made-info__button button" href="./form.html">Сделать заказ</a>
-      </article>
+      <div class="catalog-content">
+        <ul class="catalog-content__list catalog__list">
+          <li class="catalog__item">
+            <article class="product-snippet">
+              <h3 class="product-snippet__title">Зайчик-попрыгайчик</h3>
+              <img class="product-snippet__image" src="./img/photo-1-mobile.png" alt="Зайчик-попрыгайчик">
+              <p class="product-snippet__descr">Рост 30 см, вес 200 г</p>
+              <span class="product-snippet__price">1 200 руб.</span>
+              <a class="product-snippet__button" href="">В корзину</a>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product-snippet">
+              <h3 class="product-snippet__title">Корзинка для белья</h3>
+              <img class="product-snippet__image" src="./img/photo-2-mobile.png" alt="Корзинка для белья">
+              <p class="product-snippet__descr">Диаметр 15 см, высота 10 см</p>
+              <span class="product-snippet__price">690 руб.</span>
+              <a class="product-snippet__button" href="">В корзину</a>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product-snippet">
+              <h3 class="product-snippet__title">Большая корзинка для игрушек</h3>
+              <img class="product-snippet__image" src="./img/photo-3-mobile.png" alt="Большая корзинка для игрушек">
+              <p class="product-snippet__descr">Диаметр 30 см, высота 30 см</p>
+              <span class="product-snippet__price">1 500 руб.</span>
+              <a class="product-snippet__button" href="">В корзину</a>
+            </article>
+          </li>
+        </ul>
+        <article class="catalog-content__made-info made-info">
+          <h3 class="made-info__title">Процесс производства</h3>
+          <video class="made-info__video" width="260" height="150" poster="./img/video-mobile.png">
+            <button class="made-info__play" type="button">Воспроизвести</button>
+          </video>
+          <p class="made-info__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="made-info__button button" href="./form.html">Сделать заказ</a>
+        </article>
+      </div>
     </div>
   </main>
   <!-- MAIN END -->
   <!-- FOOTER START -->
   <footer class="page-footer">
-    <div class="page-footer__social social">
-      <h3 class="visually-hidden">Мы в социальных сетях</h3>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link  social__link--instagramm" href="https://www.instagram.com/">Инстаграмм</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://facebook.com/">Фейсбук</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/">Твиттер</a>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="page-footer__social social">
+        <h3 class="visually-hidden">Мы в социальных сетях</h3>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link  social__link--instagramm" href="https://www.instagram.com/">Инстаграмм</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://facebook.com/">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/">Твиттер</a>
+          </li>
+        </ul>
+      </div>
+      <a class="page-footer__feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">Разработано —</a>
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-img" src="./img/mishka-logo-mobile.png" width="86" height="35" alt="Mishka">
+      </a>
     </div>
-    <a class="page-footer__feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">Разработано —</a>
-    <a class="page-footer__logo">
-      <img class="page-footer__logo-img" src="./img/mishka-logo-mobile.png" width="86" height="35" alt="Mishka">
-    </a>
   </footer>
   <!-- FOOTER END -->
 </body>

@@ -1,3 +1,18 @@
 .catalog-content__list {
   @include list-reset();
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.catalog__item {
+  @media (min-width: $desktop) {
+    height: 659px;
+    margin-bottom: 57px;
+
+    border: 1px solid #ececec;
+  }
 }
