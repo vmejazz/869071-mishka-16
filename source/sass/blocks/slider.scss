@@ -35,6 +35,15 @@
     background-image: url("../img/icon-right-arrow.svg");
   }
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet) {
     width: 53px;
     margin-top: 4px;

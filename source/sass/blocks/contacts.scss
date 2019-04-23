@@ -107,6 +107,17 @@
   }
 }
 
+.contacts__link {
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .contacts__img {
   @media (min-width: $tablet) {
     width: 768px;

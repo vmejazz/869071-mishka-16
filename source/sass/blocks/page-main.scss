@@ -202,9 +202,56 @@
     background-color: #56c3b2;
   }
 
+  &:hover,
+  &:focus {
+    height: 108px;
+  }
+
+  @media (min-width: $tablet) {
+    height: 120px;
+
+    &--interior::after {
+      top: 29px;
+      right: 36px;
+    }
+
+    &--toys::after {
+      top: 31px;
+      right: 35px;
+    }
+
+    &:hover,
+    &:focus {
+      height: 128px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.page-main__categories-link {
+  position: relative;
+
+  display: inline-block;
+  height: 100%;
+  padding-top: 24px;
+  padding-right: 185px;
+  padding-left: 30px;
+
+  vertical-align: top;
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     position: absolute;
+
+    display: inline-block;
 
     background-repeat: no-repeat;
     opacity: 0.2;
@@ -229,34 +276,6 @@
 
     background-image: url("../img/icon-toy.svg");
   }
-
-  @media (min-width: $tablet) {
-    height: 120px;
-
-    &--interior::after {
-      top: 29px;
-      right: 36px;
-    }
-
-    &--toys::after {
-      top: 31px;
-      right: 35px;
-    }
-  }
-
-  @media (min-width: $desktop) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.page-main__categories-link {
-  display: inline-block;
-  padding-top: 24px;
-  padding-right: 185px;
-  padding-left: 30px;
-
-  vertical-align: top;
 
   @media (min-width: $tablet) {
     padding-top: 30px;
