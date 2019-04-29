@@ -68,6 +68,12 @@ a {
   border: none;
 }
 
+@mixin retina {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
 // @mixin min($device-width) {
 //   @media (min-width: $device-width) {
 //     @content;

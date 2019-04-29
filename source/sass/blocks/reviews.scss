@@ -26,6 +26,11 @@
       background-image: url("../img/review@1x.jpg");
       background-repeat: no-repeat;
       background-position: center;
+      background-size: 350px auto;
+
+      @include retina {
+        background-image: url("../img/review@2x.jpg");
+      }
     }
   }
 

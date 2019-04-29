@@ -106,7 +106,7 @@
 }
 
 .product-card__params {
-  margin-bottom: 42px;
+  margin-bottom: 18px;
 
   font-size: 15px;
   line-height: 20px;
@@ -143,13 +143,11 @@
 }
 
 .product-card__image {
-  margin-top: -22px;
-
   background-color: #f1f1f1;
 
   @media (min-width: $tablet) {
     position: absolute;
-    top: 130px;
+    top: 108px;
     right: 50px;
 
     width: 333px;
@@ -169,7 +167,7 @@
 .product-card__price {
   height: 30px;
   margin: 0;
-  margin-top: 17px;
+  margin-top: 19px;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -179,7 +177,7 @@
   @media (min-width: $tablet) {
     width: 300px;
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 29px;
 
     font-size: 20px;
     line-height: 24px;
