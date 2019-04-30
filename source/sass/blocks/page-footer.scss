@@ -50,22 +50,22 @@
   font-size: 19px;
   line-height: 18px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 25px;
-    right: 0;
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 25px;
+  //   right: 0;
 
-    width: 27px;
-    height: 35px;
+  //   width: 27px;
+  //   height: 35px;
 
-    vertical-align: top;
+  //   vertical-align: top;
 
-    background-image: url("../img/htmlacademy.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 135%;
-  }
+  //   background-image: url("../img/htmlacademy.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: 135%;
+  // }
 
   @media (min-width: $tablet) {
     flex-shrink: 0;
@@ -80,6 +80,13 @@
   @media (min-width: $desktop) {
     width: 350px;
   }
+}
+
+.page-footer__feedback-logo {
+  position: absolute;
+  right: 0;
+
+  fill: #63d1bb;
 }
 
 .page-footer__logo {

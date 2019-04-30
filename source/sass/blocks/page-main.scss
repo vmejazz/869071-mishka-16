@@ -297,6 +297,15 @@
     background-image: url("../img/icon-toy.svg");
   }
 
+  &:hover::after,
+  &:focus::after {
+    opacity: 0.7;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet) {
     padding-top: 30px;
     padding-left: 36px;

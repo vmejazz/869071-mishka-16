@@ -70,28 +70,35 @@
     opacity: 0.4;
   }
 
-  &--eco::before {
-    background-image: url("../img/icon-feature-flower.svg");
-  }
+  // &--eco::before {
+  //   background-image: url("../img/icon-feature-flower.svg");
+  // }
 
-  &--style::before {
-    background-image: url("../img/icon-feature-money.svg");
-  }
+  // &--style::before {
+  //   background-image: url("../img/icon-feature-money.svg");
+  // }
 
-  &--like::before {
-    background-image: url("../img/icon-feature-heart.svg");
-  }
+  // &--like::before {
+  //   background-image: url("../img/icon-feature-heart.svg");
+  // }
 
-  &--manual::before {
-    background-image: url("../img/icon-feature-ball.svg");
-  }
+  // &--manual::before {
+  //   background-image: url("../img/icon-feature-ball.svg");
+  // }
 
-  &--manufacter::before {
-    background-image: url("../img/icon-feature-rocket.svg");
-  }
+  // &--manufacter::before {
+  //   background-image: url("../img/icon-feature-rocket.svg");
+  // }
 
-  &--present::before {
-    background-image: url("../img/icon-feature-gift.svg");
+  // &--present::before {
+  //   background-image: url("../img/icon-feature-gift.svg");
+  // }
+
+  .about__icon {
+    position: absolute;
+    top: -50px;
+
+    fill: #63d1bb;
   }
 
   @media (min-width: $tablet) {
