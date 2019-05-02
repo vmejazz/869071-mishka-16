@@ -13,15 +13,20 @@
   }
 
   @media (min-width: $desktop) {
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 100px;
   }
 }
 
 .social__item {
   @media (min-width: $desktop) {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 29px;
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
+
 }
 
 .social__link {

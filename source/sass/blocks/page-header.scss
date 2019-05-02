@@ -49,7 +49,7 @@
     max-width: 200px;
     height: 90px;
     margin: 0;
-    margin-left: 424px;
+    margin-left: 450px;
     padding-top: 10px;
   }
 }
@@ -157,6 +157,10 @@
   @media (min-width: $desktop) {
     order: 0;
     padding-left: 0;
+    padding-right: 52px;
+
+    border-bottom: none;
+
   }
 }
 
@@ -181,7 +185,7 @@
 
   @media (min-width: $desktop) {
     min-height: 88px;
-    // margin-right: 50px;
+    margin-right: 31px;
     padding-right: 10px;
 
     &:first-child {
@@ -303,20 +307,6 @@
     opacity: 0.3;
   }
 }
-
-// .page-header__shooper-link {
-
-//   @media (min-width: $tablet) {
-//     padding-bottom: 0;
-//     padding-left: 0;
-
-//     text-align: start;
-//   }
-
-//   @media (min-width: $desktop) {
-//     text-align: end;
-//   }
-// }
 
 .page-header__shopper-search {
   width: 100%;
