@@ -51,7 +51,7 @@
 
 .contacts__info {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 6px;
   padding-right: 30px;
   padding-left: 30px;
 
@@ -79,6 +79,7 @@
   @media (min-width: $tablet) {
     display: flex;
     min-width: 86%;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop) {
@@ -114,6 +115,7 @@
 
   @media (min-width: $tablet) {
     flex-shrink: 0;
+    padding-bottom: 0;
 
     &--name {
       width: 75px;

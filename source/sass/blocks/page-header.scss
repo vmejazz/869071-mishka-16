@@ -7,6 +7,13 @@
     flex-direction: row;
     padding: 0 50px;
   }
+
+  @media (min-width: $desktop) {
+    align-items: center;
+    min-height: 88px;
+
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 .page-header__logo {
@@ -39,8 +46,10 @@
   @media (min-width: $desktop) {
     justify-content: center;
     max-width: 200px;
+    height: 90px;
     margin: 0;
-    margin-left: 500px;
+    margin-left: 424px;
+    padding-top: 10px;
   }
 }
 
@@ -51,6 +60,11 @@
   @media (min-width: $tablet) {
     width: 113px;
     height: 46px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 149px;
+    height: 72px;
   }
 }
 
@@ -67,6 +81,8 @@
   @media (min-width: $desktop) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    min-height: 88px;
   }
 }
 
@@ -116,6 +132,9 @@
     display: flex;
     align-items: center;
     width: 50%;
+    min-height: 88px;
+
+    border: none;
   }
 }
 
@@ -157,7 +176,13 @@
   }
 
   @media (min-width: $desktop) {
-    margin-right: 50px;
+    min-height: 88px;
+    // margin-right: 50px;
+    padding-right: 10px;
+
+    &:first-child {
+      border-right: 1px solid #ececec;
+    }
   }
 }
 
@@ -175,6 +200,15 @@
 
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet) {
     height: 100%;
 
@@ -185,17 +219,22 @@
       padding-left: 83px;
 
       border-left: 1px solid #ececec;
-
-      &:hover,
-      &:focus {
-        opacity: 0.6;
-      }
-
-      &:active {
-        opacity: 0.3;
-      }
     }
   }
+
+  @media (min-width: $desktop) {
+    width: 266px;
+    min-height: 88px;
+  }
+}
+
+.page-header__shopper-item:hover svg,
+.page-header__shopper-item:focus svg {
+  fill: #63d1bb;
+}
+
+.page-header__shopper-item:active svg {
+  opacity: 0.3;
 }
 
 .page-header__icon-cart,
@@ -212,6 +251,20 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.page-header__icon-search {
+  @media (min-width: $tablet) {
+    top: 36px;
+    left: 33px;
+  }
+}
+
+.page-header__icon-cart {
+  @media (min-width: $tablet) {
+    top: 36px;
+    left: 33px;
   }
 }
 
@@ -236,7 +289,8 @@
 
   @media (min-width: $desktop) {
     min-width: 175px;
-    padding-top: 26px;
+    min-height: 88px;
+    padding-top: 30px;
   }
 
   &:active {
