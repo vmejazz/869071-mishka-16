@@ -19,7 +19,7 @@
   @media (min-width: $tablet) {
     position: relative;
 
-    margin-bottom: 48px;
+    margin-bottom: 46px;
     padding-right: 50px;
     padding-left: 50px;
 
@@ -173,6 +173,13 @@
     background-position: center;
   }
 
+  @media (min-width: $tablet) {
+    &::after {
+      top: -300px;
+      left: 362px;
+    }
+  }
+
   @media (min-width: $desktop) {
     position: absolute;
     top: 0;
@@ -208,14 +215,10 @@
 
   @media (min-width: $tablet) {
     width: 230px;
-    margin: 50px auto;
-    padding-left: 0;
+    margin: 48px auto;
+    padding-left: 5px;
 
     text-align: center;
-
-    // border-top: none;
-    // border-right: none;
-    // border-left: none;
   }
 
   @media (min-width: $desktop) {

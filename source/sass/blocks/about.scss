@@ -70,9 +70,9 @@
 
   @media (min-width: $tablet) {
     width: 310px;
-    margin-right: 21px;
+    margin-right: 24px;
     padding-top: 17px;
-    padding-bottom: 96px;
+    padding-bottom: 94px;
 
     font-weight: 700;
     font-size: 20px;
@@ -138,6 +138,7 @@
   @media (min-width: $tablet) {
     &--eco {
       top: -38px;
+      left: 9px;
     }
 
     &--style {
@@ -145,8 +146,8 @@
     }
 
     &--like {
-      top: -28px;
-      left: 9px;
+      top: -31px;
+      left: 8px;
     }
 
     &--manual {
@@ -154,7 +155,7 @@
     }
 
     &--manufacter {
-      top: -35px;
+      top: -33px;
     }
 
     &--present {
