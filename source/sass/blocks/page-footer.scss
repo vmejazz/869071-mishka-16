@@ -38,17 +38,18 @@
 
 .page-footer__feedback-link {
   position: relative;
-  top: -3px;
 
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 75px;
   margin-right: 18px;
   margin-left: 18px;
 
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
+
+  border-top: 1px solid #e5e5e5;
 
   // &::after {
   //   content: "";

@@ -257,7 +257,7 @@
   height: 100%;
   padding-top: 24px;
   padding-right: 185px;
-  padding-left: 30px;
+  padding-left: 29px;
 
   vertical-align: top;
 
@@ -292,7 +292,7 @@
 
   &--toys::after {
     top: 21px;
-    right: 26px;
+    right: 10px;
 
     width: 60px;
     height: 60px;
@@ -408,8 +408,8 @@
 .page-main__reviews {
   position: relative;
 
-  margin-top: -26px;
-  margin-bottom: 87px;
+  margin-top: -28px;
+  margin-bottom: 86px;
 
   &::after {
     content: "";

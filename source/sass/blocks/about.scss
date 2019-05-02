@@ -49,7 +49,7 @@
 .about__item {
   position: relative;
 
-  width: 230px;
+  width: 250px;
   margin: 0;
   padding: 0;
   padding-bottom: 83px;
@@ -105,6 +105,35 @@
   top: -50px;
 
   fill: #63d1bb;
+
+  &--eco {
+    top: -54px;
+    left: 7px;
+  }
+
+  &--style {
+    top: -53px;
+  }
+
+  &--like {
+    top: -48px;
+    left: 7px;
+  }
+
+  &--manual {
+    top: -52px;
+    left: 3px;
+  }
+
+  &--manufacter {
+    top: -50px;
+    left: -6px;
+  }
+
+  &--present {
+    top: -52px;
+    left: 3px;
+  }
 
   @media (min-width: $tablet) {
     &--eco {
