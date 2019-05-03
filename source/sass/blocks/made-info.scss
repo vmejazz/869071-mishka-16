@@ -16,7 +16,8 @@
 
 .made-info__title {
   font-weight: 700;
-
+  position: relative;
+  
   @media (min-width: $tablet) {
     position: relative;
 
@@ -27,21 +28,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -65px;
-
-      width: 32px;
-      height: 22px;
-
-      background-image: url("../img/icon-video.svg");
-      background-repeat: no-repeat;
-      background-position: center;
     }
-  }
 
   @media (min-width: $desktop) {
     width: 150px;
@@ -57,6 +44,13 @@
       left: 0;
     }
   }
+}
+
+.made-info__icon-video {
+  position: absolute;
+  fill: #63d1bb;
+  top: 6px;
+  left: 32px;
 }
 
 .made-info__descr {
@@ -79,10 +73,19 @@
   }
 }
 
-.made-info__video {
-  @media (min-width: $tablet) {
-    position: relative;
+.made-info__video-block {
+  position: relative;
+  margin-top: 24px;
 
+
+  width: 260px;
+  height: 150px;
+}
+
+.made-info__video {
+  position: relative;
+
+  @media (min-width: $tablet) {
     order: -1;
     width: 100%;
     height: 455px;
@@ -108,58 +111,27 @@
   }
 }
 
-.made-info__play {
+.made-info__play-btn {
+  @include btn-reset ();
+
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  top: 50%;
+  left: 50%;
+
+  transform: translateX(-52px) translateY(-39px);
+
+  width: 102px;
+  height: 78px;
+   
+  background-image: url("../img/icon-play.svg");
+  background-size: cover;
+
+  cursor: pointer;
+
   @media (min-width: $tablet) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-
-    width: 102px;
-    height: 78px;
-
-    background-image: url("../img/icon-play.svg");
-
-    @include btn-reset ();
-  }
-}
-
-@media (min-width: $desktop) {
-  .made-info {
-    flex-wrap: wrap;
-    width: 1050px;
-    height: 455px;
-  }
-
-  .made-info__video {
-    flex-shrink: 0;
-    width: 682px;
-    height: 100%;
-    margin-right: 78px;
-  }
-
-  .made-info__title {
-    width: 150px;
-    margin-top: 100px;
-    margin-left: 0;
-
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-
-    &::after {
-      top: -40px;
-      left: 0;
-    }
-  }
-
-  .made-info__descr {
-    width: 230px;
-    margin: 0;
-    margin-bottom: 50px;
-  }
-
-  .made-info__button {
-    width: 230px;
+  
   }
 }

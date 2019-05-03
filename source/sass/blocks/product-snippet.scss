@@ -1,4 +1,12 @@
 .product-snippet {
+  display: flex;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-bottom: 27px;
+  border: 1px solid #ececec;
+
   &:hover,
   &:focus {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
@@ -31,6 +39,12 @@
 
 .product-snippet__title {
   font-weight: 700;
+  padding: 0 28px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 27px;
 
   &:hover,
   &:focus {
@@ -46,9 +60,7 @@
     margin-top: 29px;
     margin-bottom: 15px;
 
-    font-weight: 700;
     font-size: 20px;
-    line-height: 24px;
   }
 
   @media (min-width: $desktop) {
@@ -59,6 +71,10 @@
 }
 
 .product-snippet__image {
+  order: -3;
+  width: 260px;
+  height: 195px;
+
   @media (min-width: $tablet) {
     order: -1;
     width: 334px;
@@ -74,6 +90,9 @@
   font-size: 13px;
   line-height: 30px;
   color: #444444;
+  padding: 0 28px;
+  margin: 0;
+  margin-top: 4px;
 
   @media (min-width: $tablet) {
     margin: 0;
@@ -91,8 +110,24 @@
 }
 
 .product-snippet__price {
+  position: relative;
   font-weight: 700;
   font-size: 15px;
+  padding: 0 28px;
+  margin: 0;
+  margin-top: 41px;
+  width: 150px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 204px;
+    height: 1px;
+    top: -22px;
+    left: 28px;
+
+    background-color: #ececec;
+  }
 
   @media (min-width: $tablet) {
     font-weight: 700;
@@ -107,16 +142,12 @@
 }
 
 .product-snippet__button {
-  display: inline-block;
   width: 20px;
   height: 20px;
+  margin-top: 42px;
+  margin-right: 28px;
 
   font-size: 0;
-  vertical-align: top;
-
-  // background-image: url("../img/icon-cart.svg");
-  // background-repeat: no-repeat;
-  // background-position: center;
 
   &:hover svg,
   &:focus svg {
