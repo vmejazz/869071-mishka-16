@@ -4,6 +4,10 @@
   margin-bottom: 58px;
 
   border: 1px solid #ececec;
+
+  // @media (min-width: $tablet) {
+  //   margin-bottom: 0;
+  // }
 }
 
 .made-info__title {
@@ -37,6 +41,12 @@
 
 .catalog-content__list {
   @include list-reset();
+
+  @media (min-width: $tablet) {
+    margin-top: 81px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
   @media (min-width: $desktop) {
     display: flex;
