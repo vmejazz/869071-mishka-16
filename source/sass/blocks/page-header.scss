@@ -84,8 +84,8 @@
   @media (min-width: $desktop) {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    min-height: 88px;
+    // align-items: center;
+    // min-height: 88px;
   }
 }
 
@@ -132,9 +132,9 @@
 
   @media (min-width: $desktop) {
     display: flex;
-    align-items: center;
+    // align-items: center;
     width: 50%;
-    min-height: 88px;
+    // min-height: 88px;
 
     border: none;
   }
@@ -234,6 +234,7 @@
   @media (min-width: $desktop) {
     width: 266px;
     min-height: 88px;
+    padding-top: 31px;
   }
 }
 
@@ -300,7 +301,7 @@
   @media (min-width: $desktop) {
     min-width: 175px;
     min-height: 88px;
-    padding-top: 30px;
+    padding-top: 31px;
   }
 
   &:active {

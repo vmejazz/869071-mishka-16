@@ -48,7 +48,7 @@
     }
 
     &--catalog .page-main__header-title {
-      padding-top: 98px;
+      padding-top: 97px;
     }
 
     &::after {
@@ -81,6 +81,10 @@
 
       background-color: #f1f1f1;
       background-image: none;
+    }
+
+    &--catalog .page-main__header-title {
+      padding-top: 93px;
     }
 
     &::after {
@@ -474,7 +478,7 @@
   @media (min-width: $desktop) {
     width: 100%;
     max-width: 1200px;
-    margin-top: 111px;
+    margin-top: 127px;
     padding-right: 50px;
     padding-left: 50px;
   }
