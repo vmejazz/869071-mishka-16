@@ -21,11 +21,19 @@
     background-image: url("../img/hero-mobile@2x.jpg");
   }
 
-  &--catalog {
+  &--catalog,
+  &--form {
     background-color: #f1f1f1;
     background-image: none;
     height: 178px;
   }
+
+  &--form .page-main__header-title {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  
 
   @media (min-width: $tablet) {
     position: relative;
@@ -40,7 +48,8 @@
       background-image: url("../img/hero-tablet@2x.jpg");
     }
 
-    &--catalog {
+    &--catalog,
+    &--form {
       height: 226px;
 
       background-color: #f1f1f1;
@@ -500,4 +509,10 @@
   @media (min-width: $desktop) {
     width: 1050px;
   }
+}
+
+
+.feedback-content {
+  margin: 0;
+  padding: 0;
 }

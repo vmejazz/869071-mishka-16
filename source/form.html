@@ -61,7 +61,109 @@
   <!-- MAIN START -->
   <main class="page-main">
     <div class="container">
-
+      <header class="page-main__header page-main__header--form">
+        <h1 class="page-main__header-title">Вязание на заказ</h1>
+        <div class="page-main__header-top">
+          <div class="page-main__nav">
+            <ul class="page-main__nav-list">
+              <li class="page-main__nav-item">
+                <a class="page-main__nav-link" href="./new-product.html">Новые поступления</a>
+              </li>
+              <li class="page-main__nav-item">
+                <a class="page-main__nav-link" href="./sale-product.html">Распродажа</a>
+              </li>
+            </ul>
+          </div>
+          <p class="info-delivery">Бесплатная доставка по России</p>
+        </div>
+      </header>
+      <div class="feedback-content">
+        <div class="feedback-content__title">
+          <p class="feedback-content__descr">
+              Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+          </p>
+        </div>
+        <form class="feedback-content__form feedback-form" name="feedback-filter" action="https://echo.htmlacademy.ru" method="GET">
+          <h2 class="visually-hidden">Фильтр вязания на заказ</h2>
+          <fieldset class="feedback-form__item type">
+            <legend>Тип</legend>
+            <div class="type__list">
+              <input type="radio" id="radio-interior" class="type__radio" name="type-radio" value="interior" checked>
+              <label for="radio-interior">Аксессуар для интерьера</label>
+              <input type="radio" id="radio-toys" class="type__radio" name="type-radio" value="toys">
+              <label for="radio-toys">Детская игрушка</label>
+            </div>
+          </fieldset>
+          <fieldset class="feedback-form__item color">
+            <legend>Цвет</legend>
+            <div class="color__list">
+              <input type="checkbox" id="checkbox-white" class="color__checkbox" value="white" checked>
+              <label for="checkbox-white">Белый</label>
+              <input type="checkbox" id="checkbox-gray" class="color__checkbox" value="gray" checked>
+              <label for="checkbox-gray">Серый</label>
+              <input type="checkbox" id="checkbox-turquoise" class="color__checkbox" value="turquoise">
+              <label for="checkbox-turquoise">«Тиффани»</label>
+              <input type="checkbox" id="checkbox-black" class="color__checkbox" value="black">
+              <label for="checkbox-black">Черный</label>
+              <input type="checkbox" id="checkbox-pink" class="color__checkbox" value="pink" >
+              <label for="checkbox-pink">Розовый</label>
+              <input type="checkbox" id="checkbox-orange" class="color__checkbox" value="orange" >
+              <label for="checkbox-orange">Оранжевый</label>
+            </div>
+          </fieldset>
+          <fieldset class="feedback-form__item full-name">
+            <legend>ФИО</legend>
+            <div class="full-name__field">
+              <label class="field__title" for="first-name">
+                Имя:
+              </label>
+              <input class="field__input" id="first-name" type="text" placeholder="Введите ваше имя*">
+            </div>
+            <div class="full-name__field">
+              <label class="field__title" for="second-name">
+                Фамилия:
+              </label>
+              <input class="field__input" id="second-name" type="text" placeholder="Укажите фамилию*">
+            </div>
+            <div class="full-name__field">
+              <label class="field__title" for="third-name">
+                Отчество:
+              </label>
+              <input class="field__input" id="third-name" type="text" placeholder="Отчество, если желаете">
+            </div>
+          </fieldset>
+          <fieldset class="feedback-form__item phone">
+            <legend>Тел</legend>
+            <div class="phone__field">
+              <input class="field__input phone__input" type="text" placeholder="+7 XXX XXX XX XX*">
+              <svg class="phone__icon" width="25" height="24">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </div>
+          </fieldset>
+          <fieldset class="feedback-form__item email">
+            <legend>E-mail</legend>
+            <div class="email__field">
+              <input class="field__input email__input" type="text" placeholder="Ваш Email*">
+              <svg class="email__icon" width="32" height="26">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
+            </div>
+          </fieldset>
+          <fieldset class="feedback-form__item additionally">
+            <legend>Доп</legend>
+            <div class="additionally__field">
+              <textarea class="field__input additionally__text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </fieldset>
+          <p class="feedback-form__footnote">
+            *Поля обязательны для заполения
+          </p>
+          <button class="feedback-form__button button" type="submit">
+            Отправить заказ
+          </button>
+        </form>
+      </div>
     </div>
   </main>
   <!-- MAIN END -->
