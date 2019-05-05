@@ -89,7 +89,8 @@
       background-image: url("../img/hero-desktop@2x.jpg");
     }
 
-    &--catalog {
+    &--catalog,
+    &--form {
       height: 255px;
 
       background-color: #f1f1f1;
@@ -97,6 +98,10 @@
     }
 
     &--catalog .page-main__header-title {
+      padding-top: 93px;
+    }
+
+    &--form .page-main__header-title {
       padding-top: 93px;
     }
 

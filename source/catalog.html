@@ -87,13 +87,19 @@
         <ul class="catalog-content__list catalog__list">
           <li class="catalog__item">
             <article class="product-snippet">
-              <picture class="product-snippet__image">
-                <source media="(min-width: 1150px)" srcset="./img/photo-hare-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="./img/photo-hare-tablet@1x.jpg">
-                <img src="./img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
-              </picture>
+              <a class="product-snippet__link-image" href="./zayac.html">
+                <picture class="product-snippet__image">
+                  <source media="(min-width: 1150px)" srcset="./img/photo-hare-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/photo-hare-tablet@1x.jpg">
+                  <img src="./img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+                </picture>
+              </a>
               <div class="product-snippet__content">
-                <h3 class="product-snippet__title">Зайчик-попрыгайчик</h3>
+                <h3 class="product-snippet__title">
+                  <a class="product-snippet__link-title" href="./zayac.html">
+                    Зайчик-попрыгайчик
+                  </a>
+                </h3>
                 <p class="product-snippet__descr">Рост 30 см, вес 200 г</p>
                 <span class="product-snippet__price">1 200 руб.</span>
                 <a class="product-snippet__button" href="">
@@ -107,13 +113,19 @@
           </li>
           <li class="catalog__item">
             <article class="product-snippet">
-              <picture class="product-snippet__image">
-                <source media="(min-width: 1150px)" srcset="./img/photo-bowl-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="./img/photo-bowl-tablet@1x.jpg">
-                <img src="./img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
-              </picture>
+              <a class="product-snippet__link-image" href="./basket.html">
+                <picture class="product-snippet__image">
+                  <source media="(min-width: 1150px)" srcset="./img/photo-bowl-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/photo-bowl-tablet@1x.jpg">
+                  <img src="./img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+                </picture>
+              </a>
               <div class="product-snippet__content">
-                <h3 class="product-snippet__title">Корзинка для белья</h3>
+                <h3 class="product-snippet__title">
+                  <a class="product-snippet__link-title" href="./basket.html">
+                    Корзинка для белья
+                  </a>
+                </h3>
                 <p class="product-snippet__descr">Диаметр 15 см, высота 10 см</p>
                 <span class="product-snippet__price">690 руб.</span>
                 <a class="product-snippet__button" href="">
@@ -127,13 +139,19 @@
           </li>
           <li class="catalog__item">
             <article class="product-snippet">
-              <picture class="product-snippet__image">
-                <source media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x.jpg">
-                <img src="./img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
-              </picture>
+              <a class="product-snippet__link-image" href="./basket-toys.html">
+                <picture class="product-snippet__image">
+                  <source media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x.jpg">
+                  <img src="./img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+                </picture>
+              </a>
               <div class="product-snippet__content">
-                <h3 class="product-snippet__title">Большая корзинка<br> для игрушек</h3>
+                <h3 class="product-snippet__title">
+                  <a class="product-snippet__link-title" href="./basket-toys.html">
+                    Большая корзинка<br> для игрушек
+                  </a>
+                </h3>
                 <p class="product-snippet__descr">Диаметр 30 см, высота 30 см</p>
                 <span class="product-snippet__price">1 500 руб.</span>
                 <a class="product-snippet__button" href="">
@@ -166,6 +184,23 @@
         </article>
       </div>
     </div>
+    <!-- POP-UP WINDOW START-->
+    <section class="modal">
+      <div class="modal__container">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__descr">Выберите размер:</p>
+        <div class="modal__radio-list">
+          <input type="radio" id="size-s" class="modal__radio" name="modal__radio" value="size S" checked>
+          <label for="size-s">S</label>
+          <input type="radio" id="size-m" class="modal__radio" name="modal__radio" value="size M">
+          <label for="size-m">M</label>
+          <input type="radio" id="size-L" class="modal__radio" name="modal__radio" value="size L">
+          <label for="size-L">L</label>
+        </div>
+        <button class="modal__button button">Добавить</button>
+      </div>
+    </section>
+    <!-- POP-UP WINDOW END-->
   </main>
   <!-- MAIN END -->
   <!-- FOOTER START -->

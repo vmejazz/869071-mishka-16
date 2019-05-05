@@ -66,6 +66,8 @@ a {
 
   background: none;
   border: none;
+
+  font: inherit;
 }
 
 @mixin retina {
