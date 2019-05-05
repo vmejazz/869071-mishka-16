@@ -85,17 +85,17 @@
         </div>
         <form class="feedback-content__form feedback-form" name="feedback-filter" action="https://echo.htmlacademy.ru" method="GET">
           <h2 class="visually-hidden">Фильтр вязания на заказ</h2>
-          <fieldset class="feedback-form__item type">
-            <legend>Тип</legend>
+          <div class="feedback-form__item type" style="display:flex">
+            <div class="feedback-form__title">Тип</div>
             <div class="type__list">
               <input type="radio" id="radio-interior" class="type__radio" name="type-radio" value="interior" checked>
               <label for="radio-interior">Аксессуар для интерьера</label>
               <input type="radio" id="radio-toys" class="type__radio" name="type-radio" value="toys">
               <label for="radio-toys">Детская игрушка</label>
             </div>
-          </fieldset>
-          <fieldset class="feedback-form__item color">
-            <legend>Цвет</legend>
+          </div>
+          <div class="feedback-form__item color">
+            <div class="feedback-form__title">Цвет</div>
             <div class="color__list">
               <input type="checkbox" id="checkbox-white" class="color__checkbox" value="white" checked>
               <label for="checkbox-white">Белый</label>
@@ -110,58 +110,64 @@
               <input type="checkbox" id="checkbox-orange" class="color__checkbox" value="orange" >
               <label for="checkbox-orange">Оранжевый</label>
             </div>
-          </fieldset>
-          <fieldset class="feedback-form__item full-name">
-            <legend>ФИО</legend>
-            <div class="full-name__field">
-              <label class="field__title" for="first-name">
-                Имя:
-              </label>
-              <input class="field__input" id="first-name" type="text" placeholder="Введите ваше имя*">
+          </div>
+          <div class="feedback-form__item full-name">
+            <div class="feedback-form__title feedback-form__title--full-name">ФИО</div>
+            <div class="full-name__fields">
+              <div class="full-name__field">
+                <label class="field__title" for="first-name">
+                  Имя:
+                </label>
+                <input class="field__input" id="first-name" type="text" placeholder="Введите ваше имя*">
+              </div>
+              <div class="full-name__field">
+                <label class="field__title" for="second-name">
+                  Фамилия:
+                </label>
+                <input class="field__input" id="second-name" type="text" placeholder="Укажите фамилию*">
+              </div>
+              <div class="full-name__field">
+                <label class="field__title" for="third-name">
+                  Отчество:
+                </label>
+                <input class="field__input" id="third-name" type="text" placeholder="Отчество, если желаете">
+              </div>
             </div>
-            <div class="full-name__field">
-              <label class="field__title" for="second-name">
-                Фамилия:
-              </label>
-              <input class="field__input" id="second-name" type="text" placeholder="Укажите фамилию*">
+          </div>
+          <div class="feedback-form__contacts">
+            <div class="feedback-form__item phone">
+              <div class="feedback-form__title feedback-form__title--phone">Тел</div>
+              <div class="phone__field">
+                <input class="field__input phone__input" type="text" placeholder="+7 XXX XXX XX XX*">
+                <svg class="phone__icon" width="25" height="24">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+              </div>
             </div>
-            <div class="full-name__field">
-              <label class="field__title" for="third-name">
-                Отчество:
-              </label>
-              <input class="field__input" id="third-name" type="text" placeholder="Отчество, если желаете">
+            <div class="feedback-form__item email">
+              <div class="feedback-form__title feedback-form__title--email">E-mail</div>
+              <div class="email__field">
+                <input class="field__input email__input" type="text" placeholder="Ваш Email*">
+                <svg class="email__icon" width="32" height="26">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
+              </div>
             </div>
-          </fieldset>
-          <fieldset class="feedback-form__item phone">
-            <legend>Тел</legend>
-            <div class="phone__field">
-              <input class="field__input phone__input" type="text" placeholder="+7 XXX XXX XX XX*">
-              <svg class="phone__icon" width="25" height="24">
-                <use xlink:href="#icon-phone"></use>
-              </svg>
-            </div>
-          </fieldset>
-          <fieldset class="feedback-form__item email">
-            <legend>E-mail</legend>
-            <div class="email__field">
-              <input class="field__input email__input" type="text" placeholder="Ваш Email*">
-              <svg class="email__icon" width="32" height="26">
-                <use xlink:href="#icon-mail"></use>
-              </svg>
-            </div>
-          </fieldset>
-          <fieldset class="feedback-form__item additionally">
-            <legend>Доп</legend>
+          </div>
+          <div class="feedback-form__item additionally">
+            <div class="feedback-form__title feedback-form__title--additionally">Доп</div>
             <div class="additionally__field">
               <textarea class="field__input additionally__text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
-          </fieldset>
-          <p class="feedback-form__footnote">
-            *Поля обязательны для заполения
-          </p>
-          <button class="feedback-form__button button" type="submit">
-            Отправить заказ
-          </button>
+          </div>
+          <div class="feedback-form__controls">
+            <p class="feedback-form__footnote">
+              *Поля обязательны для заполения
+            </p>
+            <button class="feedback-form__button button" type="submit">
+              Отправить заказ
+            </button>
+          </div>
         </form>
       </div>
     </div>
