@@ -27,13 +27,12 @@
     width: 100%;
     height: 100%;
     margin-top: 4px;
-    margin-left: -3px;
     margin-right: -3px;
+    margin-left: -3px;
   }
 
   @media (min-width: $desktop) {
     width: 350px;
-    
   }
 }
 
@@ -51,6 +50,15 @@
   line-height: 18px;
 
   border-top: 1px solid #e5e5e5;
+
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet) {
     flex-shrink: 0;
@@ -76,7 +84,7 @@
   right: 0;
 
   fill: #63d1bb;
- 
+
   @media (min-width: $tablet) {
     top: 25px;
   }
@@ -84,6 +92,15 @@
 
 .page-footer__logo {
   display: none;
+
+  &:hover,
+  &:focus {
+    fill: #79d8c4;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet) {
     display: inline-block;

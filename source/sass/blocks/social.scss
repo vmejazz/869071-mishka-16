@@ -1,12 +1,13 @@
 
 
 .social__list {
+  @include list-reset();
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-
-  @include list-reset();
+  margin-left: 5px;
 
   @media (min-width: $tablet) {
     justify-content: space-between;
@@ -19,6 +20,11 @@
 }
 
 .social__item {
+  margin-left: -5px;
+  padding-top: 7px;
+
+  text-align: center;
+
   @media (min-width: $desktop) {
     margin-left: 29px;
 
@@ -26,29 +32,25 @@
       margin-left: 0;
     }
   }
-
 }
 
 .social__link {
   display: inline-block;
+  align-self: center;
   width: 30px;
   height: 30px;
 
   font-size: 0;
-  vertical-align: top;
 
   background-repeat: no-repeat;
   background-position: center;
 
-  &--facebook {
-    background-image: url("../img/icon-fb.svg");
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
   }
 
-  &--instagramm {
-    background-image: url("../img/icon-insta.svg");
-  }
-
-  &--twitter {
-    background-image: url("../img/icon-twitter.svg");
+  &:active {
+    opacity: 0.3;
   }
 }

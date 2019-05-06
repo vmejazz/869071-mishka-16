@@ -33,7 +33,7 @@
         </picture>
       </a>
       <nav class="page-header__menu">
-        <button class="page-header__menu-toggle page-header__menu-toggle--open" type="button">Открыть меню</button>
+        <button class="page-header__menu-toggle" type="button">Открыть меню</button>
         <ul class="page-header__menu-list show-menu">
           <li class="page-header__menu-item">
             <a class="page-header__menu-link" href="./catalog.html">Каталог товаров</a>
@@ -129,9 +129,24 @@
           </tr>
         </table>
         <picture>
-          <source media="(min-width: 1150px)" src="./img/triple-set-desktop@1x.jpg" srcset="./img/triple-set-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" src="./img/triple-set-tablet@1x.jpg" srcset="./img/triple-set-tablet@2x.jpg 2x">
-          <img class="product-card__image" width="260" height="315" src="./img/triple-set-mobile@1x.jpg" srcset="./img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+          <source type="image/webp" media="(min-width: 1150px)"
+                   srcset="./img/triple-set-desktop@1x.webp 1x,
+                            ./img/triple-set-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/triple-set-tablet@1x.webp 1x,
+                          ./img/triple-set-tablet@2x.webp 2x">
+          <source type="image/webp"
+                  srcset="./img/triple-set-mobile@1x.webp 1x,
+                          ./img/triple-set-mobile@2x.webp 2x">
+          <source media="(min-width: 1150px)"
+                  srcset="./img/triple-set-desktop@1x.jpg 1x,
+                          ./img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+                  srcset="./img/triple-set-tablet@1x.jpg 1x,
+                          ./img/triple-set-tablet@2x.jpg 2x">
+          <img class="product-card__image" width="260" height="315"
+                  src="./img/triple-set-mobile@1x.jpg"
+                  srcset="./img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
         </picture>
         <p class="product-card__price">Цена: 990 руб.</p>
         <a class="button product-card__button" href="./form.html">Заказать</a>
@@ -219,14 +234,15 @@
             </td>
           </tr>
         </table>
-        <a class="contacts__map" href="map.html" aria-label="Переход на яндекс карты">
-          <img class="contacts__img" src="./img/map-mobile@1x.png" width="320" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <a class="contacts__map" href="https://maps.google.com/maps?ll=59.939398,30.323715&z=15&t=m&hl=en-US&gl=IT&mapclient=embed&q=Bolshaya%20Konyushennaya%20Street%2C%2019%2F8%20Sankt-Peterburg%20Russia%20191186" aria-label="Переход на яндекс карты">
+          <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.32085871636888!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sit!4v1551094071997" width="322" height="457" allowfullscreen allowtransparency="false"></iframe>
         </a>
         <a class="contacts__button button button--write-us" href="./form.html">Напишите нам</a>
       </section>
     </div>
     <!-- POP-UP WINDOW START-->
     <section class="modal">
+      <div class="modal__overlay"></div>
       <div class="modal__container">
         <h2 class="modal__title">Добавить в корзину</h2>
         <p class="modal__descr">Выберите размер:</p>
@@ -251,13 +267,28 @@
         <h3 class="visually-hidden">Мы в социальных сетях</h3>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link  social__link--instagramm" href="https://www.instagram.com/">Инстаграмм</a>
+            <a class="social__link  social__link--instagramm" href="https://www.instagram.com/">
+              <svg width="22" height="21">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+              Инстаграмм
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://facebook.com/">Фейсбук</a>
+            <a class="social__link social__link--facebook" href="https://facebook.com/">
+              <svg width="15" height="29">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+              Фейсбук
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/">Твиттер</a>
+            <a class="social__link social__link--twitter" href="https://twitter.com/">
+              <svg width="22" height="21">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+              Твиттер
+            </a>
           </li>
         </ul>
       </div>
@@ -267,8 +298,10 @@
         </svg>
         Разработано
       </a>
-      <a class="page-footer__logo">
-      <img class="page-footer__logo-img" src="./img/logo-footer.svg" width="86" height="35" alt="Mishka">
+      <a class="page-footer__logo" href="./index.html">
+        <svg class="page-footer__logo-img" width="86" height="35">
+          <use xlink:href="#logo-footer"></use>
+        </svg>
       </a>
     </div>
   </footer>

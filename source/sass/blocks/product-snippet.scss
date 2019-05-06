@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-bottom: 30px;
   padding-bottom: 27px;
+
   border: 1px solid #ececec;
 
   &:hover,
@@ -18,9 +19,9 @@
     position: relative;
 
     flex-direction: row;
+    justify-content: flex-start;
     height: 334px;
     margin-bottom: 54px;
-    justify-content: flex-start;
 
     border: 1px solid #ececec;
   }
@@ -39,8 +40,8 @@
   justify-content: space-between;
 
   @media (min-width: $tablet) {
-    margin-left: 26px;
     display: block;
+    margin-left: 26px;
   }
 
   @media (min-width: $desktop) {
@@ -49,13 +50,14 @@
 }
 
 .product-snippet__title {
-  font-weight: 700;
-  padding: 0 27px;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
   margin: 0;
-  margin-top: 27px;
+  margin-top: 20px;
+  padding: 0 27px;
+
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
 
   &:hover,
   &:focus {
@@ -67,17 +69,17 @@
   }
 
   @media (min-width: $tablet) {
+    width: 100%;
     margin: 0;
     margin-top: 25px;
     padding: 0;
-    width: 100%;
 
     font-size: 20px;
   }
 
   @media (min-width: $desktop) {
     margin-top: 20px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
 
@@ -94,24 +96,25 @@
 
   @media (min-width: $desktop) {
     width: 100%;
-    margin-left: -2px;
     margin-top: -2px;
+    margin-left: -2px;
   }
 }
 
 .product-snippet__descr {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0 28px;
+
   font-size: 13px;
   line-height: 30px;
   color: #444444;
-  padding: 0 28px;
-  margin: 0;
-  margin-top: 5px;
 
   @media (min-width: $tablet) {
+    width: 100%;
     margin: 0;
     margin-top: 6px;
     padding: 0;
-    width: 100%;
 
     font-weight: 400;
     font-size: 15px;
@@ -125,39 +128,44 @@
 
 .product-snippet__price {
   position: relative;
-  font-weight: 700;
-  font-size: 15px;
-  padding: 0 28px;
+
+  width: 150px;
   margin: 0;
   margin-top: 41px;
-  width: 150px;
+  padding: 0 28px;
+
+  font-weight: 700;
+  font-size: 15px;
 
   &::after {
     content: "";
     position: absolute;
-    width: 204px;
-    height: 1px;
     top: -22px;
     left: 28px;
+
+    width: 204px;
+    height: 1px;
 
     background-color: #ececec;
   }
 
   @media (min-width: $tablet) {
-    display: inline-block;
     position: absolute;
-    padding: 0;
-    margin-top: 0px;
-    margin-left: 5px;
     bottom: 26px;
-    
+
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 5px;
+    padding: 0;
+
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
 
     &::after {
+      left: 0;
+
       width: 268px;
-      left: 0px;
     }
   }
 
@@ -191,7 +199,7 @@
   }
 
   @media (min-width: $desktop) {
-    bottom: 27px;
     right: 2px;
+    bottom: 27px;
   }
 }
