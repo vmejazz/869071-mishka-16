@@ -19,6 +19,7 @@
 
   @include retina {
     background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: auto 373px;
   }
 
   &--catalog,
@@ -43,7 +44,7 @@
 
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center 1px;
-    // background-size: 100% auto;
+    background-size: cover;
 
     @include retina {
       background-image: url("../img/hero-tablet@2x.jpg");
