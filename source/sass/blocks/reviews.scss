@@ -14,6 +14,10 @@
     padding-left: 50px;
 
     &::before {
+      @include retina {
+        background-image: url("../img/review@2x.jpg");
+      }
+
       content: "";
       position: absolute;
       top: -78px;
@@ -23,14 +27,11 @@
       width: 350px;
       height: 457px;
 
+      background-color: #f2f2f2;
       background-image: url("../img/review@1x.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 350px auto;
-
-      @include retina {
-        background-image: url("../img/review@2x.jpg");
-      }
     }
   }
 
@@ -93,8 +94,8 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 38px;
     max-width: 800px;
+    margin-bottom: 38px;
   }
 }
 
@@ -141,6 +142,7 @@
     order: -1;
     width: 175px;
     height: 52px;
+    margin-left: auto;
     padding: 0;
     padding-top: 14px;
 

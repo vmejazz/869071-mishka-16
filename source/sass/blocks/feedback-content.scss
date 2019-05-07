@@ -164,10 +164,6 @@
   }
 }
 
-.type legend {
-  @media (min-width: $tablet) {
-  }
-}
 
 .type__list {
   position: relative;
@@ -539,12 +535,6 @@
     margin-left: 0;
 
     background-color: #f1f1f1;
-
-    &::placeholder {
-    }
-  }
-
-  @media (min-width: $desktop) {
   }
 }
 
@@ -632,9 +622,6 @@
     margin-left: 0;
 
     background-color: #f1f1f1;
-
-    &::placeholder {
-    }
   }
 }
 
@@ -666,7 +653,6 @@
   min-height: 142px;
   margin: 0;
   margin-top: 16px;
-  padding: 0;
   padding: 15px;
 
   border: 2px solid #444444;

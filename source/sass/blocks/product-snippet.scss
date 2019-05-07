@@ -55,7 +55,6 @@
   padding: 0 27px;
 
   font-weight: 700;
-  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
 
@@ -91,7 +90,7 @@
   @media (min-width: $tablet) {
     order: -1;
     width: 334px;
-    height: 100%;
+    height: auto;
   }
 
   @media (min-width: $desktop) {

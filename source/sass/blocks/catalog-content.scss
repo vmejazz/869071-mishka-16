@@ -15,8 +15,8 @@
   margin-top: 24px;
   padding-left: 90px;
 
-  font-size: 17px;
   font-weight: 700;
+  font-size: 17px;
   line-height: 24px;
 }
 
@@ -29,14 +29,13 @@
   margin: 0 33px;
   margin-top: 12px;
   margin-bottom: 32px;
-  padding-left: 23px;
-  padding-right: 0;
   padding-top: 16px;
+  padding-right: 0;
   padding-bottom: 16px;
-  
+  padding-left: 23px;
+
   font-size: 17px;
   line-height: 16px;
-
 }
 
 .catalog-content__list {
@@ -44,8 +43,8 @@
 
   @media (min-width: $tablet) {
     margin-top: 81px;
-    margin-left: 20px;
     margin-right: 20px;
+    margin-left: 20px;
   }
 
   @media (min-width: $desktop) {

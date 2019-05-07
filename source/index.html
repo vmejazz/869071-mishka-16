@@ -5,11 +5,15 @@
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="//htmlacademy-adaptive.github.io">
   <title>Мишка:интернет-магазин уютных предметов для дома</title>
+  <link rel="preload" href="./fonts/opensans.woff" as="font">
+  <link rel="preload" href="./fonts/opensans.woff2" as="font">
+  <link rel="preload" href="./fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="./fonts/opensansbold.woff2" as="font">
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.min.css">
+  <script src="./js/picturefill.min.js"></script>
 </head>
 
 <body>
@@ -199,10 +203,10 @@
           </div>
           <div class="slider__buttons">
             <button class="slider__button slider__button--prev" type="button">
-              <span class="visually-hidden">Предыдущий</span>
+              <span class="visually-hidden">Предыдущий отзыв</span>
             </button>
             <button class="slider__button slider__button--next" type="button">
-              <span class="visually-hidden">Следующий</span>
+              <span class="visually-hidden">Следующий отзыв</span>
             </button>
           </div>
         </div>
@@ -291,13 +295,13 @@
           </li>
         </ul>
       </div>
-      <a class="page-footer__feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="page-footer__feedback-link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="page-footer__feedback-logo" width="27" height="34">
           <use xlink:href="#logo-htmlacademy"></use>
         </svg>
         Разработано
       </a>
-      <a class="page-footer__logo" href="./index.html">
+      <a class="page-footer__logo" href="./index.html" aria-label="На главную">
         <svg class="page-footer__logo-img" width="86" height="35">
           <use xlink:href="#logo-footer"></use>
         </svg>

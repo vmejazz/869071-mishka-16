@@ -36,6 +36,7 @@
 
   @media (min-width: $tablet) {
     position: absolute;
+    top: 0;
 
     justify-content: flex-start;
     width: 320px;
@@ -120,15 +121,16 @@
 
 
 .page-header__menu-list {
+  @include list-reset();
+
   display: none;
   width: 100%;
-
-  @include list-reset();
 
   @media (min-width: $tablet) {
     z-index: 1;
 
     display: flex;
+    flex-wrap: wrap;
     padding: 0 50px;
   }
 
@@ -143,9 +145,9 @@
 }
 
 .page-header__shopper-menu {
-  display: none;
-
   @include list-reset();
+
+  display: none;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -331,9 +333,9 @@
 }
 
 .search-field__button {
-  position: relative;
-
   @include btn-reset();
+
+  position: relative;
   // font-size: 17px;
   // font-weight: 700;
   // line-height: 24px;

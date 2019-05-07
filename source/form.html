@@ -6,6 +6,10 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мишка:интернет-магазин уютных предметов для дома</title>
+  <link rel="preload" href="./fonts/opensans.woff" as="font">
+  <link rel="preload" href="./fonts/opensans.woff2" as="font">
+  <link rel="preload" href="./fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="./fonts/opensansbold.woff2" as="font">
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.min.css">
@@ -81,7 +85,7 @@
         </div>
         <form class="feedback-content__form feedback-form" name="feedback-filter" action="https://echo.htmlacademy.ru" method="GET">
           <h2 class="visually-hidden">Фильтр вязания на заказ</h2>
-          <div class="feedback-form__item type" style="display:flex">
+          <div class="feedback-form__item type">
             <div class="feedback-form__title">Тип</div>
             <div class="type__list">
               <input type="radio" id="radio-interior" class="type__radio" name="type-radio" value="interior" checked>
@@ -201,13 +205,13 @@
           </li>
         </ul>
       </div>
-      <a class="page-footer__feedback-link" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="page-footer__feedback-link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="page-footer__feedback-logo" width="27" height="34">
           <use xlink:href="#logo-htmlacademy"></use>
         </svg>
         Разработано
       </a>
-      <a class="page-footer__logo" href="./index.html">
+      <a class="page-footer__logo" href="./index.html" aria-label="На главную">
         <svg class="page-footer__logo-img" width="86" height="35">
           <use xlink:href="#logo-footer"></use>
         </svg>
