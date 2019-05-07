@@ -2,8 +2,8 @@
   @media (min-width: $desktop) {
     position: relative;
 
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
     // flex-wrap: wrap;
     // justify-content: flex-end;
     // height: 457px;
@@ -45,6 +45,7 @@
 
   @media (min-width: $desktop) {
     width: 350px;
+    margin-top: 72px;
     margin-left: 220px;
     padding-left: 0;
 
@@ -141,10 +142,11 @@
     margin-left: -2px;
 
     &--name {
-      width: 79px;
+      min-width: 79px;
     }
 
     &--value {
+      min-width: 220px;
       max-width: 230px;
     }
   }
@@ -206,8 +208,9 @@
 
   @media (min-width: $desktop) {
     position: absolute;
-    top: -71px;
-    right: 51px;
+    top: 0px;
+    right: 0px;
+    margin-right: 50px;
 
     order: 2;
     width: 525px;
@@ -281,7 +284,7 @@
     width: 230px;
     height: 52px;
     margin: 0;
-    margin-top: 48px;
+    margin-top: 40px;
     margin-bottom: 0;
     margin-left: 225px;
 

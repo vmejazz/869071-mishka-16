@@ -471,7 +471,6 @@
 
   @media (min-width: $desktop) {
     margin-top: -28px;
-    margin-bottom: 262px;
 
 
     &::after {
@@ -490,6 +489,7 @@
   }
 
   @media (min-width: $desktop) {
+    margin-top: 190px;
     margin-bottom: 95px;
   }
 }
