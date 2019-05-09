@@ -55,6 +55,10 @@
   }
 }
 
+.page-header__logo--disabled {
+  pointer-events: none;
+}
+
 .page-header__logo-img {
   width: 86px;
   height: 35px;

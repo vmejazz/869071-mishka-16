@@ -153,6 +153,10 @@
 }
 
 .contacts__link {
+  padding-bottom: 3px;
+
+  box-shadow: 0 1px 0 0 #63d1ba;
+
   &:hover,
   &:focus {
     color: #46c1ae;

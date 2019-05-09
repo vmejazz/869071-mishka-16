@@ -90,14 +90,6 @@
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: 0 -1px;
 
-    &--catalog,
-    &--form {
-      height: 255px;
-
-      background-color: #f1f1f1;
-      background-image: none;
-    }
-
     &--catalog .page-main__header-title {
       padding-top: 93px;
     }
@@ -112,6 +104,22 @@
 
       width: 1250px;
       height: 34px;
+    }
+
+    &--catalog,
+    &--form {
+      height: 255px;
+
+      background-color: #f1f1f1;
+      background-image: none;
+
+      &::after {
+        bottom: -15px;
+        left: 0;
+
+        width: 1150px;
+        height: 34px;
+      }
     }
   }
 }
