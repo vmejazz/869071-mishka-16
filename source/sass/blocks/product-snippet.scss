@@ -50,7 +50,7 @@
     // flex-shrink: 0;
     // flex-direction: column;
     // justify-content: flex-start;
-    min-height: 197px;
+    // min-height: 197px;
   }
 }
 
@@ -138,7 +138,8 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 7px;
+    margin-top: 6px;
+    padding-bottom: 30px;
   }
 }
 
