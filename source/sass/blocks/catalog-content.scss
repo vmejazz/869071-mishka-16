@@ -59,14 +59,9 @@
   @media (min-width: $desktop) {
     min-height: 659px;
     margin-bottom: 57px;
+    margin-left: 50px;
 
     border: 1px solid #ececec;
-  }
-}
-
-.catalog-content__item {
-  @media (min-width: $desktop) {
-    margin-left: 50px;
   }
 }
 
