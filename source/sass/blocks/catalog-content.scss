@@ -55,11 +55,23 @@
   }
 }
 
-.catalog__item {
+.catalog-content__item {
   @media (min-width: $desktop) {
     min-height: 659px;
     margin-bottom: 57px;
 
     border: 1px solid #ececec;
+  }
+}
+
+.catalog-content__item {
+  @media (min-width: $desktop) {
+    margin-left: 50px;
+  }
+}
+
+.catalog-content__item:first-child {
+  @media (min-width: $desktop) {
+    margin-left: 0;
   }
 }
