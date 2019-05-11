@@ -108,7 +108,7 @@
 
   &--toys::after {
     top: 21px;
-    right: 10px;
+    right: 27px;
 
     width: 60px;
     height: 60px;
@@ -138,19 +138,20 @@
     }
 
     &--interior::after {
-      top: 29px;
-      right: 36px;
+      top: 30px;
+      right: 37px;
     }
 
     &--toys::after {
       top: 32px;
-      right: 15px;
+      right: 34px;
     }
   }
 
   @media (min-width: $desktop) {
     width: 100%;
     padding-top: 26px;
+    padding-right: 320px;
 
     &--interior::after {
       top: 29px;
