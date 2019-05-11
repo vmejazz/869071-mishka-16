@@ -73,7 +73,7 @@
 
   @media (min-width: $tablet) {
     height: 100%;
-    margin-right: 19px;
+    margin-right: 35px;
 
     box-shadow: none;
   }
@@ -110,6 +110,8 @@
     padding-top: 18px;
     padding-left: 0;
 
+    font-size: 15px;
+    line-height: 24px;
     text-align: start;
   }
 
@@ -118,6 +120,8 @@
     min-height: 88px;
     padding-top: 31px;
     padding-right: 36px;
+
+    font-size: 17px;
   }
 
   &:active {
