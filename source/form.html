@@ -29,26 +29,26 @@
           <img class="page-header__logo-img" width="86" height="35" src="./img/logo-mobile.svg" alt="Mishka">
         </picture>
       </a>
-      <nav class="page-header__menu">
-        <button class="page-header__menu-toggle" type="button">Открыть меню</button>
-        <ul class="page-header__menu-list show-menu">
-          <li class="page-header__menu-item">
-            <a class="page-header__menu-link" href="./catalog.html">Каталог товаров</a>
+      <nav class="page-header__menu-navigation menu-navigation">
+        <button class="menu-navigation__toggle" type="button">Открыть меню</button>
+        <ul class="menu-navigation__list menu-navigation__list--show-menu">
+          <li class="menu-navigation__item">
+            <a class="menu-navigation__link" href="./catalog.html">Каталог товаров</a>
           </li>
-          <li class="page-header__menu-item">
-            <a class="page-header__menu-link" href="./form.html">Вязание на заказ</a>
+          <li class="menu-navigation__item">
+            <a class="menu-navigation__link" href="./form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <div class="page-header__shopper-menu show-menu">
-          <form class="page-header__shopper-item page-header__shopper-search search-field" action="https://echo.htmlacademy.ru" method="post">
-            <svg class="page-header__icon-search" width="18" height="18">
+        <div class="page-header__shopper-menu shopper-menu shopper-menu--show-menu">
+          <form class="shopper-menu__item shopper-menu__item--search" action="https://echo.htmlacademy.ru" method="post">
+            <svg class="shopper-menu__icon shopper-menu__icon--search" width="18" height="18">
               <use xlink:href="#icon-search"></use>
             </svg>
-            <input class="search-field__input" type="text" id="search-input" aria-label="Поле для поиска по сайту" placeholder="Поиск по сайту">
-            <button class="search-field__button" type="submit" aria-label="Кнопка поиска">Поиск</button>
+            <input class="shopper-menu__search-input" type="text" id="search-input" aria-label="Поле для поиска по сайту" placeholder="Поиск по сайту">
+            <button class="shopper-menu__search-button" type="submit" aria-label="Кнопка поиска">Поиск</button>
           </form>
-          <a class="page-header__shopper-item page-header__shopper-item--cart" href="./cart.html">
-            <svg class="page-header__icon-cart" width="21" height="18">
+          <a class="shopper-menu__item shopper-menu__item--cart" href="./cart.html">
+            <svg class="shopper-menu__icon shopper-menu__icon--cart" width="21" height="18">
               <use xlink:href="#icon-cart"></use>
             </svg>
             Корзина: пока пуста

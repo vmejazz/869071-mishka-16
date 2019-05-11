@@ -1,5 +1,5 @@
-var menuToggle = document.querySelector(".page-header__menu-toggle");
-var menuList = document.querySelector(".page-header__menu-list");
+var menuToggle = document.querySelector(".menu-navigation__toggle");
+var menuList = document.querySelector(".menu-navigation__list");
 var shopperMenu = document.querySelector(".page-header__shopper-menu");
 var modal = document.querySelector(".modal");
 var cardButton = document.querySelector(".product-card__button");
@@ -8,17 +8,17 @@ var modalAddButton = document.querySelector(".modal__button");
 var linkAddProduct = document.querySelectorAll(".product-snippet__button");
 
 document.addEventListener('DOMContentLoaded', function() {
-  menuList.classList.remove("show-menu");
-  shopperMenu.classList.remove("show-menu");
-  menuToggle.classList.add("page-header__menu-toggle--close");
+  menuList.classList.remove("menu-navigation__list--show-menu");
+  shopperMenu.classList.remove("shopper-menu--show-menu");
+  menuToggle.classList.add("menu-navigation__toggle--close");
 }, false);
 
 menuToggle.addEventListener("click", function(evt) {
   evt.preventDefault ();
-  menuList.classList.toggle("show-menu");
-  shopperMenu.classList.toggle("show-menu");
-  menuToggle.classList.toggle("page-header__menu-toggle--open");
-  menuToggle.classList.toggle("page-header__menu-toggle--close");
+  menuList.classList.toggle("menu-navigation__list--show-menu");
+  shopperMenu.classList.toggle("shopper-menu--show-menu");
+  menuToggle.classList.toggle("shopper-menu__toggle--open");
+  menuToggle.classList.toggle("shopper-menu__toggle--close");
 });
 
 if (cardButton) {
