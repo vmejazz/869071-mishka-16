@@ -31,6 +31,8 @@
   }
 
   @media (min-width: $desktop) {
+    margin-left: -2px;
+
     font-size: 53px;
     line-height: 57px;
   }
@@ -48,10 +50,24 @@
 .about__item {
   position: relative;
 
-  width: 250px;
+  width: 260px;
   margin: 0;
   padding: 0;
+  padding-right: 60px;
   padding-bottom: 83px;
+
+
+  &--eco {
+    padding-right: 65px;
+  }
+
+  &--manual {
+    padding-right: 20px;
+  }
+
+  &--manufacter {
+    padding-right: 10px;
+  }
 
   &::before {
     content: "";
@@ -76,6 +92,14 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 22px;
+
+    &--eco {
+      padding-right: 80px;
+    }
+
+    &--like {
+      padding-right: 80px;
+    }
 
     &:nth-child(1),
     &:nth-child(4) {
