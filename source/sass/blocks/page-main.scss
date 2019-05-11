@@ -223,6 +223,17 @@
   }
 }
 
+.page-main__nav-link {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-main__product-card {
   position: relative;
 

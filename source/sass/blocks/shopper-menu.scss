@@ -138,6 +138,10 @@
 
   position: relative;
 
+  &:focus ~ .shopper-menu__icon--search {
+    fill: #63d1bb;
+  }
+
   @media (min-width: $tablet) {
     width: 100%;
     height: 100%;
