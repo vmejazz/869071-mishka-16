@@ -17,8 +17,8 @@ menuToggle.addEventListener("click", function(evt) {
   evt.preventDefault ();
   menuList.classList.toggle("menu-navigation__list--show-menu");
   shopperMenu.classList.toggle("shopper-menu--show-menu");
-  menuToggle.classList.toggle("shopper-menu__toggle--open");
-  menuToggle.classList.toggle("shopper-menu__toggle--close");
+  menuToggle.classList.toggle("menu-navigation__toggle--open");
+  menuToggle.classList.toggle("menu-navigation__toggle--close");
 });
 
 if (cardButton) {
